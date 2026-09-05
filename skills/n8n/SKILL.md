@@ -7,10 +7,10 @@ description: >-
 
 # n8n Skill
 You are an expert at building production-grade n8n workflow automations, custom nodes, and integrations.
-Read the detailed reference files in \`\$\{CLAUDE_SKILL_DIR\}\` for comprehensive patterns:
-- \`workflow-reference.md\` — Workflow design, triggers, flow control, error handling, expressions, data transformation
-- \`custom-nodes-reference.md\` — Building custom nodes with TypeScript, declarative vs programmatic, credentials, testing
-- \`api-reference.md\` — n8n REST API for programmatic workflow management, execution control, credential operations
+Read the detailed reference files for comprehensive patterns:
+- [references/workflow-reference.md](references/workflow-reference.md) — Workflow design, triggers, flow control, error handling, expressions, data transformation
+- [references/custom-nodes-reference.md](references/custom-nodes-reference.md) — Building custom nodes with TypeScript, declarative vs programmatic, credentials, testing
+- [references/api-reference.md](references/api-reference.md) — n8n REST API for programmatic workflow management, execution control, credential operations
 ## Setup Checklist
 ### Self-Hosted (Docker)
 ```bash
@@ -51,7 +51,13 @@ n8n start
 }
 ```
 ### Common Trigger Types
-\| Trigger \| Use Case \|<br>\|---------\|----------\|<br>\| \`n8n-nodes-base.webhook\` \| HTTP requests, API endpoints \|<br>\| \`n8n-nodes-base.scheduleTrigger\` \| Cron-based recurring tasks \|<br>\| \`n8n-nodes-base.formTrigger\` \| User form submissions \|<br>\| \`n8n-nodes-base.emailReadImap\` \| Incoming emails \|<br>\| \`n8n-nodes-base.workflowTrigger\` \| Called by other workflows \|
+| Trigger | Use Case |
+|---------|----------|
+| `n8n-nodes-base.webhook` | HTTP requests, API endpoints |
+| `n8n-nodes-base.scheduleTrigger` | Cron-based recurring tasks |
+| `n8n-nodes-base.formTrigger` | User form submissions |
+| `n8n-nodes-base.emailReadImap` | Incoming emails |
+| `n8n-nodes-base.workflowTrigger` | Called by other workflows |
 ### Expression Syntax
 ```plain text
 {{ $json.fieldName }}                    // current node data
@@ -104,10 +110,27 @@ for item in _input.all():
 return results
 ```
 ## Critical Rules
-1. \*\*Every workflow needs a trigger node\*\* — webhooks, schedules, form triggers, or app triggers start execution<br>2. \*\*Items are arrays\*\* — each node receives and outputs arrays of items; always handle multiple items<br>3. \*\*Use expressions over Code nodes\*\* — expressions are faster and easier to maintain; use Code only for complex logic<br>4. \*\*Set \`executionOrder: "v1"\`\*\* — ensures predictable node execution order in new workflows<br>5. \*\*Error workflows are separate\*\* — configure a dedicated error workflow in workflow settings to catch failures<br>6. \*\*Credentials are encrypted at rest\*\* — never hardcode secrets in node parameters; use n8n's credential system<br>7. \*\*Webhook paths must be unique\*\* — duplicate paths cause routing conflicts<br>8. \*\*Binary data needs explicit handling\*\* — use "Move Binary Data" node to convert between binary and JSON<br>9. \*\*Test with manual execution first\*\* — always test workflows manually before activating for production<br>10. \*\*Pin data for development\*\* — use pinned data on nodes to test downstream logic without re-triggering<br>11. \*\*Sub-workflows for reuse\*\* — extract shared logic into sub-workflows called via Execute Workflow node<br>12. \*\*Respect rate limits\*\* — use the SplitInBatches node and wait nodes when calling rate-limited APIs
+1. **Every workflow needs a trigger node** — webhooks, schedules, form triggers, or app triggers start execution
+2. **Items are arrays** — each node receives and outputs arrays of items; always handle multiple items
+3. **Use expressions over Code nodes** — expressions are faster and easier to maintain; use Code only for complex logic
+4. **Set `executionOrder: "v1"`** — ensures predictable node execution order in new workflows
+5. **Error workflows are separate** — configure a dedicated error workflow in workflow settings to catch failures
+6. **Credentials are encrypted at rest** — never hardcode secrets in node parameters; use n8n's credential system
+7. **Webhook paths must be unique** — duplicate paths cause routing conflicts
+8. **Binary data needs explicit handling** — use "Move Binary Data" node to convert between binary and JSON
+9. **Test with manual execution first** — always test workflows manually before activating for production
+10. **Pin data for development** — use pinned data on nodes to test downstream logic without re-triggering
+11. **Sub-workflows for reuse** — extract shared logic into sub-workflows called via Execute Workflow node
+12. **Respect rate limits** — use the SplitInBatches node and wait nodes when calling rate-limited APIs
 ## Key Node Categories
-\| Category \| Nodes \|<br>\|----------\|-------\|<br>\| \*\*Flow\*\* \| IF, Switch, Merge, SplitInBatches, Loop Over Items \|<br>\| \*\*Transform\*\* \| Set, Code, HTML Extract, Markdown, XML, Date & Time \|<br>\| \*\*Data\*\* \| HTTP Request, GraphQL, FTP, RSS, Read/Write Files \|<br>\| \*\*Developer\*\* \| Webhook, Execute Command, Execute Workflow, Function \|<br>\| \*\*AI\*\* \| AI Agent, Text Classifier, Summarization Chain, Vector Store \|
-Use \`\$ARGUMENTS\` to understand what the user wants to build. Read the reference files for detailed patterns before writing code.
+| Category | Nodes |
+|----------|-------|
+| **Flow** | IF, Switch, Merge, SplitInBatches, Loop Over Items |
+| **Transform** | Set, Code, HTML Extract, Markdown, XML, Date & Time |
+| **Data** | HTTP Request, GraphQL, FTP, RSS, Read/Write Files |
+| **Developer** | Webhook, Execute Command, Execute Workflow, Function |
+| **AI** | AI Agent, Text Classifier, Summarization Chain, Vector Store |
+Use `$ARGUMENTS` to understand what the user wants to build. Read the reference files for detailed patterns before writing code.
 ---
 
 

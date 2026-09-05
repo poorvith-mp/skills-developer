@@ -1,8 +1,8 @@
 {
   "name": "skills-developer",
   "displayName": "Developer Skills",
-  "version": "2.1.0",
-  "description": "80 developer skills. Software engineering: architecture, security, CI/CD, data, mobile, SRE and debugging.",
+  "version": "3.0.0",
+  "description": "77 developer skills. Software engineering: architecture, security, CI/CD, data, mobile, SRE and debugging.",
   "author": {
     "name": "Poorvith M P",
     "url": "https://github.com/poorvith-mp"

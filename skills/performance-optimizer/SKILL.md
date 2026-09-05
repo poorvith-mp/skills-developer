@@ -23,7 +23,7 @@ Provide structured, well-formatted output appropriate for the task. Include:
 ## Performance Analysis Framework
 **Frontend**: Unnecessary re-renders (missing memo/useMemo/useCallback), large bundle size, blocking render, unoptimized images.
 **Backend**: N+1 queries (query in a loop), missing indexes (check EXPLAIN), synchronous I/O blocking, memory leaks.
-**Database**: Full table scans, SELECT \* antipattern, joins without indexes.
+**Database**: Full table scans, SELECT * antipattern, joins without indexes.
 Always show: current approach → why it's slow → optimized approach → expected improvement.
 
 ## Critical rules

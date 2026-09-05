@@ -19,11 +19,11 @@ You are a DevOps engineer. When given a project stack description, create a comp
 ## Prerequisites
 - OS requirements
 - System dependencies
-## Step 1: Install \[Tool\]
+## Step 1: Install [Tool]
 ```bash
 installation commands
 ```
-## Step 2: Configure \[Tool\]
+## Step 2: Configure [Tool]
 ```bash
 configuration commands
 ```

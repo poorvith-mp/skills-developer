@@ -29,7 +29,7 @@ Provide structured, well-formatted output appropriate for the task. Include:
 │ │ │ │ ┌─── day of week (0-7)
 * * * * *
 ```
-Common: Every day at midnight: `0 0 * * *` \| Every Monday 9am: `0 9 * * 1` \| Every 15 min: `*/15 * * * *`
+Common: Every day at midnight: `0 0 * * *` | Every Monday 9am: `0 9 * * 1` | Every 15 min: `*/15 * * * *`
 **Production requirements**: Dead man's switch ([healthchecks.io](http://healthchecks.io)), distributed lock to prevent concurrent runs (Redis), explicit timezone (UTC recommended).
 
 ## Critical rules

@@ -8,13 +8,18 @@ description: >-
 
 # Trigger.dev Skill
 You are an expert at building production-grade Trigger.dev v4 background tasks, workflows, and automations in TypeScript.
-Read the detailed reference files in \`\$\{CLAUDE_SKILL_DIR\}\` for comprehensive code patterns:
-- \`core-reference.md\` — Tasks, runs, triggering, queues, concurrency, retries, errors, idempotency, wait functions
-- \`config-reference.md\` — trigger.config.ts, build extensions, deployment, CLI, project structure, env vars, monorepos
-- \`advanced-reference.md\` — AI integration, streams, realtime, middleware, locals, lifecycle hooks, metadata, tags, scheduled tasks
+Read the detailed reference files for comprehensive code patterns:
+- [references/core-reference.md](references/core-reference.md) — Tasks, runs, triggering, queues, concurrency, retries, errors, idempotency, wait functions
+- [references/config-reference.md](references/config-reference.md) — trigger.config.ts, build extensions, deployment, CLI, project structure, env vars, monorepos
+- [references/advanced-reference.md](references/advanced-reference.md) — AI integration, streams, realtime, middleware, locals, lifecycle hooks, metadata, tags, scheduled tasks
 ## Setup Checklist
-If starting a new Trigger.dev project or adding to an existing one, refer to https://trigger.dev/docs/manual-setup and use the \`mcp__trigger__search_docs\` tool for the latest setup instructions. Core steps:
-1. Install packages: \`npm add @trigger.dev/sdk@latest\` and \`npm add -D @trigger.dev/build@latest\`<br>2. Create \`trigger.config.ts\` at project root with \`defineConfig(\{ project: "\<ref\>", dirs: \["./src/trigger"\] \})\`<br>3. Add \`TRIGGER_SECRET_KEY\` to \`.env\`<br>4. Create task files in the configured \`dirs\` directory<br>5. Run \`npx trigger.dev@latest dev\` for local development<br>6. Deploy with \`npx trigger.dev@latest deploy\`
+If starting a new Trigger.dev project or adding to an existing one, refer to https://trigger.dev/docs/manual-setup and use the `mcp__trigger__search_docs` tool for the latest setup instructions. Core steps:
+1. Install packages: `npm add @trigger.dev/sdk@latest` and `npm add -D @trigger.dev/build@latest`
+2. Create `trigger.config.ts` at project root with `defineConfig({ project: "<ref>", dirs: ["./src/trigger"] })`
+3. Add `TRIGGER_SECRET_KEY` to `.env`
+4. Create task files in the configured `dirs` directory
+5. Run `npx trigger.dev@latest dev` for local development
+6. Deploy with `npx trigger.dev@latest deploy`
 ## Core Patterns
 ### Basic Task
 ```typescript
@@ -63,9 +68,28 @@ const result = await otherTask.triggerAndWait({ data: "hello" });
 if (result.ok) console.log(result.output);
 ```
 ## Critical Rules
-1. \*\*Task IDs must be unique\*\* across the entire project<br>2. \*\*Payloads and return values must be JSON serializable\*\* — no classes, functions, or circular refs<br>3. \*\*Always export tasks\*\* from trigger files (unexported tasks become hidden/internal-only)<br>4. \*\*Use type-only imports\*\* when triggering from backend: \`import type \{ myTask \} from "\~/trigger/my-task"\`<br>5. \*\*trigger.config.ts must be at the project root\*\* — it cannot be nested<br>6. \*\*Use \`AbortTaskRunError\`\*\* to fail without retrying on permanent errors<br>7. \*\*Wait functions are free\*\* — tasks checkpoint during waits, no compute charges<br>8. \*\*Concurrency limits only count actively executing runs\*\* — delayed/waiting runs don't count<br>9. \*\*Max 10 tags per run\*\*, max 256KB metadata per run, max 1000 items per batch<br>10. \*\*Use \`idempotencyKeys.create()\`\*\* inside tasks to prevent duplicate child triggers during retries<br>11. \*\*Use the \`mcp__trigger__search_docs\` tool\*\* to look up the latest docs when unsure about any API<br>12. \*\*Use \`mcp__trigger__deploy\`\*\* to deploy tasks, \*\*\`mcp__trigger__list_runs\`\*\* to check runs, \*\*\`mcp__trigger__trigger_task\`\*\* to trigger tasks
+1. **Task IDs must be unique** across the entire project
+2. **Payloads and return values must be JSON serializable** — no classes, functions, or circular refs
+3. **Always export tasks** from trigger files (unexported tasks become hidden/internal-only)
+4. **Use type-only imports** when triggering from backend: `import type { myTask } from "~/trigger/my-task"`
+5. **trigger.config.ts must be at the project root** — it cannot be nested
+6. **Use `AbortTaskRunError`** to fail without retrying on permanent errors
+7. **Wait functions are free** — tasks checkpoint during waits, no compute charges
+8. **Concurrency limits only count actively executing runs** — delayed/waiting runs don't count
+9. **Max 10 tags per run**, max 256KB metadata per run, max 1000 items per batch
+10. **Use `idempotencyKeys.create()`** inside tasks to prevent duplicate child triggers during retries
+11. **Use the `mcp__trigger__search_docs` tool** to look up the latest docs when unsure about any API
+12. **Use `mcp__trigger__deploy`** to deploy tasks, **`mcp__trigger__list_runs`** to check runs, **`mcp__trigger__trigger_task`** to trigger tasks
 ## Machine Presets
-\| Preset \| vCPU \| RAM \|<br>\|--------\|------\|-----\|<br>\| micro \| 0.25 \| 0.25 GB \|<br>\| small-1x (default) \| 0.5 \| 0.5 GB \|<br>\| small-2x \| 1 \| 1 GB \|<br>\| medium-1x \| 1 \| 2 GB \|<br>\| medium-2x \| 2 \| 4 GB \|<br>\| large-1x \| 4 \| 8 GB \|<br>\| large-2x \| 8 \| 16 GB \|
+| Preset | vCPU | RAM |
+|--------|------|-----|
+| micro | 0.25 | 0.25 GB |
+| small-1x (default) | 0.5 | 0.5 GB |
+| small-2x | 1 | 1 GB |
+| medium-1x | 1 | 2 GB |
+| medium-2x | 2 | 4 GB |
+| large-1x | 4 | 8 GB |
+| large-2x | 8 | 16 GB |
 ## Key SDK Imports
 ```typescript
 import {
@@ -75,7 +99,7 @@ import {
 } from "@trigger.dev/sdk";
 import { ai } from "@trigger.dev/sdk/ai";
 ```
-Use \`\$ARGUMENTS\` to understand what the user wants to build. Read the reference files for detailed patterns before writing code.
+Use `$ARGUMENTS` to understand what the user wants to build. Read the reference files for detailed patterns before writing code.
 ---
 
 

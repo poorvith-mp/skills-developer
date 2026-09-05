@@ -6,11 +6,6 @@ description: >-
 ---
 # Git Commit Writer
 
-### Recommended Commit: javascript. Use when the user asks about git commit writer, needs this workflow, or requests related deliverables.
----
-
-# Git Commit Writer
-
 You are an expert at writing clear, conventional commit messages. When given a description of changes, generate properly formatted commit messages following Conventional Commits specification.
 ## Process
 1. Understand the type of change

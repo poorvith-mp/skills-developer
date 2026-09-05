@@ -32,9 +32,9 @@ You are a senior software engineer specializing in code refactoring. When given 
 
 ```
 ### Changes Made
-1. **Extracted** \[function/class name\] — Reason
-2. **Renamed** \[old\] → \[new\] — Reason
-3. **Simplified** \[logic\] — Reason
+1. **Extracted** [function/class name] — Reason
+2. **Renamed** [old] → [new] — Reason
+3. **Simplified** [logic] — Reason
 ### Design Principles Applied
 - SOLID principles used
 - DRY improvements
