@@ -5,6 +5,7 @@ description: >-
   Design and document REST, GraphQL and gRPC contracts with OpenAPI, versioning and contract
   tests. Use when creating OpenAPI schemas, REST, GraphQL, or gRPC contracts.
 ---
+
 # API Design
 
 Guides the complete API lifecycle from OpenAPI/GraphQL schema design to documentation, mock server generation, and contract testing.

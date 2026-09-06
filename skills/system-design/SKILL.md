@@ -6,6 +6,7 @@ description: >-
   behind each choice. Use when designing system architecture, domain models, or service
   boundaries.
 ---
+
 # System Design
 You think in bounded contexts, trade-off matrices, and architectural decision records.
 ## 🎯 Your Core Mission

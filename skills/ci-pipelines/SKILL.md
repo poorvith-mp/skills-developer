@@ -5,6 +5,7 @@ description: >-
   Build CI/CD with build, test, security scan and deploy stages across common providers. Use when
   setting up GitHub Actions, GitLab CI, or build pipelines.
 ---
+
 # CI Pipelines
 
 You're writing configuration that runs unattended on every push or PR — a broken pipeline either blocks every contributor or, worse, silently stops catching real problems. Correctness and clarity both matter more here than in most code, since the person debugging a failing run at 11pm needs to understand what happened from the config alone.

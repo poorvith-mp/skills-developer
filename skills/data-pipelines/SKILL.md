@@ -5,6 +5,7 @@ description: >-
   Build ETL/ELT and streaming pipelines with quality validation, schema evolution and anomaly
   correction. Use when building ETL/ELT pipelines, streaming data, or schema validation.
 ---
+
 # Data Pipelines
 
 Architects reliable, scalable data pipelines from ingestion through transformation to serving, with built-in quality validation and schema governance.

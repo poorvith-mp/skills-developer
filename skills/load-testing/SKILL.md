@@ -5,6 +5,7 @@ description: >-
   Design and run load tests with realistic traffic patterns against a stated baseline. Use when
   stress-testing systems with k6, Locust, or concurrency benchmarks.
 ---
+
 # Load Testing
 
 A load test that doesn't map to a real usage pattern tells you nothing useful — the goal isn't to generate traffic, it's to answer a specific question (can this handle launch day, where's the bottleneck, did the last deploy regress performance).

@@ -5,6 +5,7 @@ description: >-
   Write detection rules, correlate SIEM telemetry and map behaviour to MITRE ATT&CK. Use when
   building security monitoring, SIEM rules, or anomaly detection.
 ---
+
 # Threat Detection
 
 Develops automated threat detection logic, analyzes security telemetry, correlates SOC events, and applies threat intelligence to defend infrastructure.

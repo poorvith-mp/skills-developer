@@ -5,6 +5,7 @@ description: >-
   Write bare-metal and RTOS firmware for ESP32, ARM Cortex-M, STM32 and Nordic nRF. Use when
   writing embedded C/C++, RTOS, microcontroller, or IoT code.
 ---
+
 # Firmware
 ## 🎯 Your Core Mission
 - Write correct, deterministic firmware that respects hardware constraints (RAM, flash, timing)

@@ -5,6 +5,7 @@ description: >-
   Design schemas with the right relationships, indexes and normalisation, then fix the queries
   that turn out slow. Use when designing schemas, indexing strategies, or optimizing slow queries.
 ---
+
 # Database
 
 You are an expert database architect. When given an app description, design an optimized SQL schema with proper relationships, indexes, and constraints.

@@ -5,59 +5,119 @@ description: >-
   Open and land PRs, respond to review comments, manage issues, labels, tags and releases through
   the `gh` CLI. Use when automating GitHub issues, PR templates, labels, or project boards.
 ---
-# Github Workflow
 
-Open and land PRs, respond to review comments, manage issues, labels, tags and releases through the `gh` CLI..
+# github-workflow
 
-## Process
+## Core Philosophy
+GitHub is the operating system of modern software collaboration. Relying on clicking through the web UI for every pull request, issue label, and release creates massive context switching. Professional engineering teams drive high-velocity delivery through the official GitHub CLI (`gh`), automated CI/CD gating, semantic branch protections, automated release drafting, and clear PR review standards.
 
-1. **Intake & Scope Definition**
-   - Identify specific objectives, inputs, constraints, and operational context.
-   - Inspect existing project documentation, configurations, or relevant repository assets.
+---
 
-2. **Analysis & Strategic Formulation**
-   - Evaluate options against best practices, security posture, and domain requirements.
-   - Deconstruct complex components into discrete, actionable phases.
+## 4-Step GitHub Operations & CI/CD Discipline
 
-3. **Execution & Synthesis**
-   - Produce structured, production-grade deliverables matching the required format.
-   - Ground all recommendations in concrete project evidence rather than abstract generalities.
+### Step 1: High-Velocity GitHub CLI (`gh`) Mastery
+1. **Core CLI Workflow**:
+   - Create issue and start work:
+     ```bash
+     gh issue create --title "fix(db): handle connection pool timeout" --body "Details..."
+     gh issue develop 42 --checkout
+     ```
+   - Open Pull Request with auto-filled commits:
+     ```bash
+     gh pr create --fill --assignee @me --label "bug,backend"
+     ```
+   - Check CI test status:
+     ```bash
+     gh pr checks
+     ```
+   - Merge PR using squash strategy:
+     ```bash
+     gh pr merge --squash --delete-branch
+     ```
 
-4. **Review & Refinement**
-   - Validate against the verification checklist and domain edge cases.
-   - Highlight open questions, explicit trade-offs, and next milestones.
+### Step 2: PR Description & Review Hygiene
+1. **The 4-Part PR Description**:
+   - *1. Context & Problem*: Link to issue (`Fixes #42`).
+   - *2. Technical Approach*: Bullet points of architectural decisions.
+   - *3. Verification Evidence*: Exact test output or screenshot/terminal recording.
+   - *4. Rollback Plan*: How to revert in production if an incident occurs.
+2. **Code Review Etiquette**:
+   - Use conventional comments prefixes: `nit:`, `suggestion:`, `question:`, `blocking:`.
+   - Never leave blocking reviews without providing a concrete code snippet or alternative.
 
-## Deliverable & Output Format
+### Step 3: Branch Protections & Automated CI Gates
+1. **Repository Rulesets / Branch Protection Rules**:
+   - Require linear history (enforce squash or rebase merges; ban merge commits).
+   - Require status checks to pass before merging:
+     - Linter / Static Analysis (`eslint`, `golangci-lint`, `ruff`).
+     - Unit Test Suite with code coverage threshold ($\ge 80\%$).
+     - Security / Secret Scanning (`gitleaks`, CodeQL).
+   - Require signed commits (`git commit -S`).
 
-### 📋 Executive Summary
-- **Objective:** Key goal addressed
-- **Status:** Complete / Action Required
-- **Primary Recommendation:** Core actionable conclusion
+### Step 4: Semantic Releases & Changelog Automation
+1. **Automated Release Drafting (`gh release`)**:
+   - Tag releases with Semantic Versioning (`vMAJOR.MINOR.PATCH`).
+   - Generate automated release notes categorized by PR labels:
+     ```bash
+     gh release create v3.1.0 --generate-notes --title "Release v3.1.0"
+     ```
+2. **Artifact Bundling**:
+   - Attach build artifacts (compiled binaries, tarballs, checksums `SHA256SUMS`) directly to the release via CLI.
 
-### 🛠️ Detailed Implementation / Analysis
-- Concrete technical, operational, or strategic specifications.
-- Clear code, configuration, or documentation blocks where applicable.
+---
 
-### 📌 Decisions & Next Steps
-- [ ] Immediate action items with designated owners.
-- [ ] Required dependencies or prerequisite milestones.
+## Deliverable Format: Pull Request Template (`.github/pull_request_template.md`)
 
-## Instructions & Operating Rules
+```markdown
+## Summary
+Fixes #[Issue Number]
 
-- Lead directly with actionable findings and structured results.
-- Never introduce speculative abstractions or unrequested complexity.
-- Maintain consistency with existing architecture and naming conventions.
-- Provide explicit rationales for non-obvious trade-offs.
+Provide a 2-3 sentence overview of what this PR changes and why.
 
-## Verification & Quality Checklist
+## Technical Changes
+- [File A]: [Explain non-obvious architecture change]
+- [File B]: [Refactor detail]
 
-- [ ] Deliverable directly satisfies all stated user requirements and criteria.
-- [ ] Edge cases, boundary conditions, and error states are addressed.
-- [ ] Output contains zero placeholder tokens, broken references, or unverified claims.
-- [ ] All cross-references and formatting comply with repository conventions.
+## Verification & Testing
+- [ ] Unit tests pass: `npm test`
+- [ ] Linter clean: `npm run lint`
+- [ ] Manual test verification evidence:
+```bash
+# Paste verification command output here
+```
 
-## Anti-Patterns & Constraints
+## Rollback Strategy
+If this PR causes a production regression:
+- Revert via `gh pr revert [PR_NUMBER]` or roll back deployment commit.
+```
 
-- **NEVER** output generic boilerplate without grounding in specific project inputs.
-- **NEVER** silently omit unresolved contradictions or unverified assumptions.
-- **NEVER** make unrequested modifications outside the stated deliverable boundary.
+---
+
+## Worked Example: Automated Release Automation via `gh` CLI
+
+- **Workflow**: Developer completed Sprint release.
+- **Execution**:
+  ```bash
+  gh pr list --state merged --milestone "Sprint 14"
+  gh release create v1.4.0 --generate-notes --title "v1.4.0: Distributed Queue Support"
+  gh release upload v1.4.0 ./dist/engine-linux-amd64 ./dist/SHA256SUMS
+  ```
+- **Outcome**: Shipped signed release notes, binary assets, and checksums in 45 seconds without touching a web browser.
+
+---
+
+## Verification Checklist
+
+- [ ] PR description links to tracked issue and includes reproducible test output.
+- [ ] CI pipeline enforces linter, type-check, and automated test pass gates.
+- [ ] Branch protection rules require passing checks and squash-merge discipline.
+- [ ] Release tags follow Semantic Versioning (`vMAJOR.MINOR.PATCH`).
+- [ ] All released binaries are accompanied by cryptographic checksums.
+
+---
+
+## Anti-Patterns
+
+- **Monster PRs**: Submitting a 3,000-line diff touching 40 unrelated files and asking for a quick review.
+- **Bypassing CI**: Merging to `main` with failing or skipped status checks.
+- **Vague Commit Messages**: Opening PRs with titles like "updates" or "fix stuff".

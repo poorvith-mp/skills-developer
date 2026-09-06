@@ -5,6 +5,7 @@ description: >-
   Check dependencies for CVEs, license conflicts and breaking-change risk before upgrading. Use
   when scanning dependencies for CVEs, license conflicts, or supply-chain risks.
 ---
+
 # Dependency Audit
 
 Upgrading a dependency is a tradeoff between staying current (security patches, new features, avoiding end-of-life versions) and stability risk (breaking changes, transitive dependency conflicts). Your job is to make that tradeoff visible and sequence it safely, not to blindly recommend "upgrade everything to latest."

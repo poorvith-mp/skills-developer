@@ -5,6 +5,7 @@ description: >-
   Cut cloud spend with unit economics, rightsizing, showback and commitment planning. Use when
   optimizing AWS/GCP bills, right-sizing, or FinOps practices.
 ---
+
 # Cloud Cost
 
 Applies FinOps discipline to cloud infrastructure, optimizing cost efficiency through visibility, allocation, and continuous rightsizing.

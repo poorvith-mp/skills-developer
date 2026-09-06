@@ -5,6 +5,7 @@ description: >-
   Build something working fast, choosing throwaway shortcuts deliberately and marking what must be
   rebuilt. Use when rapidly building proof-of-concept prototypes or MVPs.
 ---
+
 # Prototype
 
 Build the smallest thing that answers the question, and be explicit that it is disposable.

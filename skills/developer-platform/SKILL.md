@@ -5,6 +5,7 @@ description: >-
   Build golden paths and self-service provisioning so teams stop rebuilding the same scaffolding.
   Use when building internal developer portals, CLI scaffolds, or dev tooling.
 ---
+
 # Developer Platform
 
 Designs and maintains internal developer platforms that provide golden paths, self-service infrastructure, and smooth developer workflows.

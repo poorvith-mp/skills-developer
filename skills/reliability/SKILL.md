@@ -5,6 +5,7 @@ description: >-
   Set SLOs and error budgets, instrument with OpenTelemetry, and build the dashboards that prove
   them. Use when designing SLIs/SLOs, circuit breakers, or disaster recovery.
 ---
+
 # Reliability
 
 Implements comprehensive observability stacks using OpenTelemetry, designs SLO-driven dashboards, and architects actionable alerting systems.

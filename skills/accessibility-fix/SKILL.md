@@ -5,6 +5,7 @@ description: >-
   Audit and refactor code for WCAG 2.1/2.2 AA and AAA: ARIA, keyboard operability, screen readers.
   Use when auditing or remediating WCAG 2.1/2.2 AA/AAA accessibility issues.
 ---
+
 # Accessibility Fix
 
 Audits, validates, and remediates accessibility issues across web applications according to WCAG 2.1/2.2 AA and AAA standards, Section 508, and ADA guidelines.

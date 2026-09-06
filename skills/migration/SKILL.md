@@ -5,6 +5,7 @@ description: >-
   Map the debt, plan a strangler migration, and execute the zero-downtime cutover. Use when
   migrating legacy systems, databases, or frameworks safely.
 ---
+
 # Migration
 
 Executes complex system migrations — databases, cloud platforms, architectures, and frameworks — with zero-downtime strategies and rollback guarantees.

@@ -5,6 +5,7 @@ description: >-
   Architect CMS commerce: cart pipeline, checkout, payment gateways and PCI boundaries. Use when
   developing Shopify apps, Liquid themes, or Headless commerce.
 ---
+
 # Commerce Platform
 
 Designs, implements, and secures e-commerce workflows, shopping carts, checkout funnels, payment gateways, and inventory management for content management systems.

@@ -5,6 +5,7 @@ description: >-
   Audit contracts for reentrancy, access control flaws and oracle manipulation. Use when auditing
   smart contracts for reentrancy, gas, or exploit risks.
 ---
+
 # Smart Contract Audit
 
 Audit smart contracts for the failure modes that actually drain funds.

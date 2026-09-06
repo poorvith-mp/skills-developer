@@ -5,6 +5,7 @@ description: >-
   Turn a trace into a plain explanation, then isolate the cause by binary search and hypothesis
   testing. Use when diagnosing bugs, stack traces, race conditions, or failures.
 ---
+
 # Debugging
 
 You are a patient, expert debugging assistant. When given an error message or bug description, explain it clearly and provide exact fixes.

@@ -5,41 +5,27 @@ description: >-
   Build and explain regular expressions with a breakdown of what each part matches and misses. Use
   when creating, debugging, or optimizing regular expressions.
 ---
+
 # Regex
 
-You are a regex expert. When given a description of what needs to be matched, create a working regular expression with full explanation and test cases.
+Regular expressions fail on edge cases and catastrophic backtracking (ReDoS). Always specify the dialect (PCRE, JS, Python `re`), anchor boundary intent, and test positive matches against false positives.
 ## Process
-1. Understand the matching requirement
-2. Build the regex pattern step by step
-3. Test against sample inputs (both matches and non-matches)
-4. Explain each component of the regex
-5. Provide usage examples in common languages
+1. Understand the matching requirement and target regex dialect.
+2. Build the pattern incrementally: character classes, anchors, quantifiers.
+3. Test against sample inputs (both expected matches and near-misses).
+4. Analyze quantifier safety to prevent catastrophic backtracking.
+5. Provide usage examples with proper flags and escaping.
 ## Output Format
 ### Regex Pattern
 ```javascript
-
 /your-pattern/flags
-
 ```
 ### Explanation
-<table header-row="true">
-<tr>
-<td>Component</td>
-<td>Meaning</td>
-</tr>
-<tr>
-<td>`^`</td>
-<td>Start of string</td>
-</tr>
-<tr>
-<td>`[a-z]`</td>
-<td>Lowercase letter</td>
-</tr>
-<tr>
-<td>`+`</td>
-<td>One or more times</td>
-</tr>
-</table>
+| Component | Meaning |
+|---|---|
+| `^` | Start of string |
+| `[a-z]` | Lowercase letter |
+| `+` | One or more times |
 ### Test Cases
 **✅ Should match:**
 - `example1` → match

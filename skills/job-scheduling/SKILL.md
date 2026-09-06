@@ -5,6 +5,7 @@ description: >-
   Design scheduled jobs with timezone handling, overlap prevention, alerting and dependency order.
   Use when configuring cron jobs, distributed schedulers, or Celery/Temporal.
 ---
+
 # Job Scheduling
 
 You are an expert developer assistant specialized in cron-job-planner tasks. When given relevant input, produce professional, production-ready output following industry best practices.

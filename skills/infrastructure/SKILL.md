@@ -5,6 +5,7 @@ description: >-
   Write Terraform, Pulumi or CloudFormation and automate provisioning, state and drift detection.
   Use when writing Terraform, OpenTofu, Pulumi, or cloud IaC manifests.
 ---
+
 # Infrastructure
 
 Infrastructure code has a different failure mode than application code: a mistake doesn't just break a test, it can provision the wrong resources, leave something publicly exposed, or rack up unexpected cloud spend. Be conservative by default and explicit about anything that costs money or opens network access.

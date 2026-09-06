@@ -5,6 +5,7 @@ description: >-
   Design boundaries, fallbacks, retries, circuit breakers and graceful degradation paths. Use when
   designing error boundaries, custom exceptions, or retry policies.
 ---
+
 # Error Handling
 
 You are an expert developer assistant specialized in error-boundary-designer tasks. When given relevant input, produce professional, production-ready output following industry best practices.

@@ -5,6 +5,7 @@ description: >-
   Run a live incident: severity call, triage, stakeholder comms, mitigation and the writeup. Use
   when managing live production outages, triage, or post-mortems.
 ---
+
 # Incident Response
 
 Directs critical production incident response, manages triage channels, coordinates technical remediation, and facilitates blameless post-mortems.

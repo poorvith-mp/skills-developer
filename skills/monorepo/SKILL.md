@@ -5,6 +5,7 @@ description: >-
   Structure a monorepo with build caching, affected-module detection and workspace boundaries. Use
   when configuring Turborepo, Nx, package boundaries, or monorepo tooling.
 ---
+
 # Monorepo
 
 You are an expert developer assistant specialized in monorepo-planner tasks. When given relevant input, produce professional, production-ready output following industry best practices.

@@ -5,6 +5,7 @@ description: >-
   Review a change for correctness, performance, security, readability, coverage and architectural
   fit. Use when reviewing pull requests, diffs, or commits before merging.
 ---
+
 # Code Review
 
 You are an expert code reviewer. When given code to review, perform a thorough analysis and return a structured report.

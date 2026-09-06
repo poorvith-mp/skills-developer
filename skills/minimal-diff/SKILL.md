@@ -5,6 +5,7 @@ description: >-
   Make the smallest correct change that fixes the problem, resisting every incidental refactor.
   Use when fixing bugs with the smallest surgical change, avoiding refactors.
 ---
+
 # Minimal Diff
 
 Make the smallest correct change, and resist everything else.

@@ -5,6 +5,7 @@ description: >-
   Threat model with STRIDE and audit code against the OWASP Top 10 before it ships. Use when
   reviewing application code and endpoints for vulnerabilities.
 ---
+
 # Security Review
 
 Conducts comprehensive application security reviews, threat modeling, vulnerability auditing (OWASP Top 10, CWE/SANS), and secure architecture design.

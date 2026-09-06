@@ -6,6 +6,7 @@ description: >-
   tracker traceability. Use when establishing Git flow, trunk-based development, or merge
   policies.
 ---
+
 # Branching Strategy
 
 Design a branching and release process that matches how the team actually ships.
