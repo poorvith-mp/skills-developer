@@ -1,0 +1,7 @@
+should_fire:
+  - "help with change notes"
+  - "write commit messages, pr descriptions and changelog entries from the diff itself."
+  - "run change-notes workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

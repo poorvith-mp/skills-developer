@@ -1,0 +1,7 @@
+should_fire:
+  - "help with error handling"
+  - "design boundaries, fallbacks, retries, circuit breakers and graceful degradation paths."
+  - "run error-handling workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

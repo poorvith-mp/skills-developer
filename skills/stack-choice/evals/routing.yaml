@@ -1,0 +1,7 @@
+should_fire:
+  - "help with stack choice"
+  - "evaluate technology options against requirements, team skill, scale and total cost, and record why."
+  - "run stack-choice workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

@@ -1,0 +1,7 @@
+should_fire:
+  - "help with firmware"
+  - "write bare-metal and rtos firmware for esp32, arm cortex-m, stm32 and nordic nrf."
+  - "run firmware workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

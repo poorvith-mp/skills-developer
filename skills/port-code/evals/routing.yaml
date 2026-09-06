@@ -1,0 +1,7 @@
+should_fire:
+  - "help with port code"
+  - "translate code between languages, or migrate javascript to typescript, preserving behaviour and coverage."
+  - "run port-code workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

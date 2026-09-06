@@ -1,0 +1,7 @@
+should_fire:
+  - "help with data pipelines"
+  - "build etl/elt and streaming pipelines with quality validation, schema evolution and anomaly correction."
+  - "run data-pipelines workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

@@ -1,0 +1,7 @@
+should_fire:
+  - "help with smart contract audit"
+  - "audit contracts for reentrancy, access control flaws and oracle manipulation."
+  - "run smart-contract-audit workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

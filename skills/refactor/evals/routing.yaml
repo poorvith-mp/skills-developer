@@ -1,0 +1,7 @@
+should_fire:
+  - "help with refactor"
+  - "find structural smells and apply named refactorings without changing behaviour."
+  - "run refactor workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

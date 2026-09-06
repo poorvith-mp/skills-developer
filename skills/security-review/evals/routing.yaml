@@ -1,0 +1,7 @@
+should_fire:
+  - "help with security review"
+  - "threat model with stride and audit code against the owasp top 10 before it ships."
+  - "run security-review workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

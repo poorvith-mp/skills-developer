@@ -1,0 +1,7 @@
+should_fire:
+  - "help with salesforce"
+  - "architect salesforce"
+  - "run salesforce workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

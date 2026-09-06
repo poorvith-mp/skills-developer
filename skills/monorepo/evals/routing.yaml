@@ -1,0 +1,7 @@
+should_fire:
+  - "help with monorepo"
+  - "structure a monorepo with build caching, affected-module detection and workspace boundaries."
+  - "run monorepo workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

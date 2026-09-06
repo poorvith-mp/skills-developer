@@ -1,0 +1,7 @@
+should_fire:
+  - "help with ml deployment"
+  - "train, serve, evaluate and integrate models into production systems."
+  - "run ml-deployment workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

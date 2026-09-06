@@ -1,0 +1,7 @@
+should_fire:
+  - "help with model audit"
+  - "independently review a model end to end"
+  - "run model-audit workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

@@ -1,0 +1,7 @@
+should_fire:
+  - "help with performance audit"
+  - "profile and fix slowness across core web vitals, backend queries and infrastructure."
+  - "run performance-audit workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

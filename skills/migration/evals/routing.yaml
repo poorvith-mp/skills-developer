@@ -1,0 +1,7 @@
+should_fire:
+  - "help with migration"
+  - "map the debt, plan a strangler migration, and execute the zero-downtime cutover."
+  - "run migration workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

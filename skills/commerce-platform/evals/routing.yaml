@@ -1,0 +1,7 @@
+should_fire:
+  - "help with commerce platform"
+  - "architect cms commerce"
+  - "run commerce-platform workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

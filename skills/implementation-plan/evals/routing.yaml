@@ -1,0 +1,7 @@
+should_fire:
+  - "help with implementation plan"
+  - "break the change into ordered, reviewable steps with checkpoints, so a long task can be stopped and resumed."
+  - "run implementation-plan workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

@@ -1,0 +1,7 @@
+should_fire:
+  - "help with audit readiness"
+  - "prepare for soc 2, iso 27001, hipaa or pci-dss"
+  - "run audit-readiness workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

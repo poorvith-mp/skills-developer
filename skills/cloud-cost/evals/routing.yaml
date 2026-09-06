@@ -1,0 +1,7 @@
+should_fire:
+  - "help with cloud cost"
+  - "cut cloud spend with unit economics, rightsizing, showback and commitment planning."
+  - "run cloud-cost workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

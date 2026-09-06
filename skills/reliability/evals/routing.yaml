@@ -1,0 +1,7 @@
+should_fire:
+  - "help with reliability"
+  - "set slos and error budgets, instrument with opentelemetry, and build the dashboards that prove them."
+  - "run reliability workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

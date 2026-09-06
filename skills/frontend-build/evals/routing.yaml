@@ -1,0 +1,7 @@
+should_fire:
+  - "help with frontend build"
+  - "implement web uis in react, vue or angular with attention to performance, state and correctness."
+  - "run frontend-build workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

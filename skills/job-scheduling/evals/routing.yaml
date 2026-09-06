@@ -1,0 +1,7 @@
+should_fire:
+  - "help with job scheduling"
+  - "design scheduled jobs with timezone handling, overlap prevention, alerting and dependency order."
+  - "run job-scheduling workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

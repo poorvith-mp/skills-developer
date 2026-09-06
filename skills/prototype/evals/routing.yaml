@@ -1,0 +1,7 @@
+should_fire:
+  - "help with prototype"
+  - "build something working fast, choosing throwaway shortcuts deliberately and marking what must be rebuilt."
+  - "run prototype workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

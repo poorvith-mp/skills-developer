@@ -1,0 +1,7 @@
+should_fire:
+  - "help with debugging"
+  - "turn a trace into a plain explanation, then isolate the cause by binary search and hypothesis testing."
+  - "run debugging workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

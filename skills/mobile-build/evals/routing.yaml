@@ -1,0 +1,7 @@
+should_fire:
+  - "help with mobile build"
+  - "build mobile apps native or cross-platform, with real depth in swift/swiftui and kotlin/compose."
+  - "run mobile-build workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

@@ -1,0 +1,7 @@
+should_fire:
+  - "help with branching strategy"
+  - "design the branching and release model"
+  - "run branching-strategy workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

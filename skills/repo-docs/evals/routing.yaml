@@ -1,0 +1,7 @@
+should_fire:
+  - "help with repo docs"
+  - "write the readme, setup guide and comments that explain intent rather than restate the code."
+  - "run repo-docs workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

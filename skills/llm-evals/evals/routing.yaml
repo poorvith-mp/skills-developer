@@ -1,0 +1,7 @@
+should_fire:
+  - "help with llm evals"
+  - "build evaluation harnesses"
+  - "run llm-evals workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

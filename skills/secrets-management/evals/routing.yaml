@@ -1,0 +1,7 @@
+should_fire:
+  - "help with secrets management"
+  - "handle keys properly"
+  - "run secrets-management workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

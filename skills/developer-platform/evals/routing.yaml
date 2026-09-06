@@ -1,0 +1,7 @@
+should_fire:
+  - "help with developer platform"
+  - "build golden paths and self-service provisioning so teams stop rebuilding the same scaffolding."
+  - "run developer-platform workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

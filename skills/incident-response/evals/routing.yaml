@@ -1,0 +1,7 @@
+should_fire:
+  - "help with incident response"
+  - "run a live incident"
+  - "run incident-response workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

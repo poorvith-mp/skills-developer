@@ -1,0 +1,7 @@
+should_fire:
+  - "help with regex"
+  - "build and explain regular expressions with a breakdown of what each part matches and misses."
+  - "run regex workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

@@ -1,0 +1,7 @@
+should_fire:
+  - "help with load testing"
+  - "design and run load tests with realistic traffic patterns against a stated baseline."
+  - "run load-testing workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

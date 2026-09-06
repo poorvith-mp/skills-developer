@@ -1,0 +1,7 @@
+should_fire:
+  - "help with github workflow"
+  - "open and land prs, respond to review comments, manage issues, labels, tags and releases through the `gh` cli."
+  - "run github-workflow workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

@@ -1,0 +1,7 @@
+should_fire:
+  - "help with cloud security"
+  - "design identity boundaries, network segmentation, key management and workload isolation."
+  - "run cloud-security workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

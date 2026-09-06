@@ -1,0 +1,7 @@
+should_fire:
+  - "help with realtime systems"
+  - "build websocket, sse and pub/sub features"
+  - "run realtime-systems workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

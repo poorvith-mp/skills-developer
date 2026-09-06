@@ -1,0 +1,7 @@
+should_fire:
+  - "help with smart contracts"
+  - "write solidity for evm"
+  - "run smart-contracts workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

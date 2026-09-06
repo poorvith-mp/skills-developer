@@ -1,0 +1,7 @@
+should_fire:
+  - "help with speech pipelines"
+  - "build voice pipelines from audio ingestion through whisper-style or cloud asr to structured output."
+  - "run speech-pipelines workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

@@ -1,0 +1,7 @@
+should_fire:
+  - "help with api design"
+  - "design and document rest, graphql and grpc contracts with openapi, versioning and contract tests."
+  - "run api-design workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

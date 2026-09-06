@@ -1,0 +1,7 @@
+should_fire:
+  - "help with threat detection"
+  - "write detection rules, correlate siem telemetry and map behaviour to mitre att&ck."
+  - "run threat-detection workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

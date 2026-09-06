@@ -1,0 +1,7 @@
+should_fire:
+  - "help with infrastructure"
+  - "write terraform, pulumi or cloudformation and automate provisioning, state and drift detection."
+  - "run infrastructure workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

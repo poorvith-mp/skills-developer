@@ -1,0 +1,7 @@
+should_fire:
+  - "help with ci pipelines"
+  - "build ci/cd with build, test, security scan and deploy stages across common providers."
+  - "run ci-pipelines workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

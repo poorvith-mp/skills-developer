@@ -1,0 +1,7 @@
+should_fire:
+  - "help with accessibility fix"
+  - "audit and refactor code for wcag 2.1/2.2 aa and aaa"
+  - "run accessibility-fix workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

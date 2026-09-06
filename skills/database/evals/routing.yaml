@@ -1,0 +1,7 @@
+should_fire:
+  - "help with database"
+  - "design schemas with the right relationships, indexes and normalisation, then fix the queries that turn out slow."
+  - "run database workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

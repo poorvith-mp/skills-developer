@@ -1,0 +1,7 @@
+should_fire:
+  - "help with code review"
+  - "review a change for correctness, performance, security, readability, coverage and architectural fit."
+  - "run code-review workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

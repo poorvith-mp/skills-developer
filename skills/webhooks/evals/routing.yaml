@@ -1,0 +1,7 @@
+should_fire:
+  - "help with webhooks"
+  - "build webhook receivers with signature verification, idempotency, retries and dead letter queues."
+  - "run webhooks workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

@@ -1,0 +1,7 @@
+should_fire:
+  - "help with authentication"
+  - "implement oauth 2.0, oidc, sessions, token lifetimes, mfa and password storage without rolling your own crypto."
+  - "run authentication workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

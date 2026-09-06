@@ -1,0 +1,7 @@
+should_fire:
+  - "help with minimal diff"
+  - "make the smallest correct change that fixes the problem, resisting every incidental refactor."
+  - "run minimal-diff workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry

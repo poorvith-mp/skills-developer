@@ -1,0 +1,7 @@
+should_fire:
+  - "help with pen test"
+  - "run authorised penetration tests and red team exercises against apps, networks and cloud."
+  - "run pen-test workflow"
+should_not_fire:
+  - prompt: "unrelated query outside this domain"
+    expect: general-inquiry
