@@ -1,7 +1,16 @@
 should_fire:
-  - "help with port code"
-  - "translate code between languages, or migrate javascript to typescript, preserving behaviour and coverage."
-  - "run port-code workflow"
+  - 'translate this Python script into idiomatic Go'
+  - 'migrate this JavaScript project to strict TypeScript'
+  - 'convert this Java cryptography helper into Rust'
+  - 'port this Ruby script to modern Node.js while keeping tests green'
+  - 'convert these jQuery functions into modern vanilla JavaScript'
+  - 'translate this SQL stored procedure into Python SQLAlchemy code'
+  - 'port this Swift networking module to Kotlin Multiplatform'
+  - 'migrate this React codebase from Class components to functional hooks'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'refactor this Python module without changing language'
+    expect: 'refactor'
+  - prompt: 'migrate our production database from MySQL to Postgres'
+    expect: 'migration'
+  - prompt: 'write new unit tests for our TypeScript models'
+    expect: 'test-suite'

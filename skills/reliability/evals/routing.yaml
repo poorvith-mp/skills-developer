@@ -1,7 +1,16 @@
 should_fire:
-  - "help with reliability"
-  - "set slos and error budgets, instrument with opentelemetry, and build the dashboards that prove them."
-  - "run reliability workflow"
+  - 'define SLIs and SLOs for our user-facing payment checkout service'
+  - 'implement the circuit breaker pattern for calls to flaky external APIs'
+  - 'design an automated failover strategy across multiple cloud availability zones'
+  - 'calculate error budgets and establish engineering reliability policies'
+  - 'build retry mechanisms with exponential backoff and jitter for network calls'
+  - 'design a disaster recovery plan with defined RTO and RPO targets'
+  - 'set up health check endpoints and readiness probes for our services'
+  - 'conduct chaos engineering experiments to verify graceful degradation'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'coordinate the response team during an active P0 incident'
+    expect: 'incident-response'
+  - prompt: 'triage a live customer-facing outage in production'
+    expect: 'incident-response'
+  - prompt: 'run load tests against our API to measure max throughput'
+    expect: 'load-testing'

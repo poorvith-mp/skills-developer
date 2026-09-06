@@ -1,7 +1,9 @@
 ---
 name: ci-pipelines
+group: Ship and run
 description: >-
-  Build CI/CD with build, test, security scan and deploy stages across common providers.
+  Build CI/CD with build, test, security scan and deploy stages across common providers. Use when
+  setting up GitHub Actions, GitLab CI, or build pipelines.
 ---
 # CI Pipelines
 

@@ -1,7 +1,9 @@
 ---
 name: api-design
+group: Understand and design
 description: >-
-  Design and document REST, GraphQL and gRPC contracts with OpenAPI, versioning and contract tests.
+  Design and document REST, GraphQL and gRPC contracts with OpenAPI, versioning and contract
+  tests. Use when creating OpenAPI schemas, REST, GraphQL, or gRPC contracts.
 ---
 # API Design
 

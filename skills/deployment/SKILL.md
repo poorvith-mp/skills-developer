@@ -1,7 +1,9 @@
 ---
 name: deployment
+group: Ship and run
 description: >-
-  Ship it: platform config for Vercel, Netlify, Fly, Railway, Cloudflare or AWS, env and secrets, the pre/post checklist, and rollback.
+  Ship it: platform config for Vercel, Netlify, Fly, Railway, AWS, env secrets, checklists, and
+  rollback. Use when deploying applications to cloud environments.
 ---
 # Deployment
 

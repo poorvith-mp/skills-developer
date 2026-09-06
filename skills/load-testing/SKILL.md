@@ -1,7 +1,9 @@
 ---
 name: load-testing
+group: Quality
 description: >-
-  Design and run load tests with realistic traffic patterns against a stated baseline.
+  Design and run load tests with realistic traffic patterns against a stated baseline. Use when
+  stress-testing systems with k6, Locust, or concurrency benchmarks.
 ---
 # Load Testing
 

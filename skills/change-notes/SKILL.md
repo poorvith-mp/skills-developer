@@ -1,7 +1,9 @@
 ---
 name: change-notes
+group: Repo hygiene
 description: >-
-  Write commit messages, PR descriptions and changelog entries from the diff itself.
+  Write commit messages, PR descriptions and changelog entries from the diff itself. Use when
+  generating CHANGELOGs, release notes, or semver summaries.
 ---
 # Change Notes
 

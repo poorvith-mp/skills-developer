@@ -1,7 +1,16 @@
 should_fire:
-  - "help with api design"
-  - "design and document rest, graphql and grpc contracts with openapi, versioning and contract tests."
-  - "run api-design workflow"
+  - 'design a RESTful API contract for our user management service'
+  - 'write an OpenAPI 3.1 specification for these endpoints'
+  - 'how should we version our breaking API changes'
+  - 'define the protobuf schema and gRPC service definitions for auth'
+  - 'review our GraphQL schema for query complexity and naming consistency'
+  - 'design idempotent endpoints for payment webhook handling'
+  - 'what HTTP status codes and error shapes should we standardize on'
+  - 'create contract tests for our client-server API interfaces'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'implement the database migrations in Prisma'
+    expect: 'database'
+  - prompt: 'write the backend controller implementation in FastAPI'
+    expect: 'backend-build'
+  - prompt: 'test for SQL injection vulnerabilities in our endpoints'
+    expect: 'security-review'

@@ -1,7 +1,16 @@
 should_fire:
-  - "help with solution exploration"
-  - "diverge before committing"
-  - "run solution-exploration workflow"
+  - 'we need to add full-text search, give me 3 distinct approaches with trade-offs'
+  - 'explore alternative designs for handling asynchronous file exports'
+  - 'diverge on options for multi-region data replication before we build'
+  - 'what are the pros and cons of event sourcing vs CRUD for this feature'
+  - 'brainstorm technical solutions for real-time collaborative editing'
+  - 'compare 3 different caching architectures for our read-heavy service'
+  - 'explore ways to handle tenant isolation without dedicated databases'
+  - 'give me contrasting approaches to zero-downtime database migrations'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'write the step-by-step implementation plan for the chosen design'
+    expect: 'implementation-plan'
+  - prompt: 'write a product requirement spec for this feature'
+    expect: 'spec-writing'
+  - prompt: 'build a quick throwaway prototype to test latency'
+    expect: 'prototype'

@@ -1,7 +1,16 @@
 should_fire:
-  - "help with audit readiness"
-  - "prepare for soc 2, iso 27001, hipaa or pci-dss"
-  - "run audit-readiness workflow"
+  - 'prepare technical evidence for an upcoming SOC 2 Type II audit'
+  - 'map our engineering security controls to ISO 27001 requirements'
+  - 'document access review procedures and change management evidence'
+  - 'verify our disaster recovery and backup restoration test documentation'
+  - 'gather automated evidence for user offboarding and MFA enforcement'
+  - 'audit our vulnerability remediation SLAs to ensure compliance'
+  - 'prepare continuous compliance evidence using Vanta or Drata'
+  - 'review our software development lifecycle policies for auditor review'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'audit financial balance sheets and accounting ledgers'
+    expect: 'bookkeeping'
+  - prompt: 'draft corporate data privacy policies for GDPR compliance'
+    expect: 'data-privacy'
+  - prompt: 'review application code for OWASP security bugs'
+    expect: 'security-review'

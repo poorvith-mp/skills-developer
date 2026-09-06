@@ -1,7 +1,16 @@
 should_fire:
-  - "help with authentication"
-  - "implement oauth 2.0, oidc, sessions, token lifetimes, mfa and password storage without rolling your own crypto."
-  - "run authentication workflow"
+  - 'implement JWT authentication with refresh token rotation in Node.js'
+  - 'set up OAuth2 login with Google and GitHub in Next.js'
+  - 'implement multi-factor authentication (MFA) using TOTP apps'
+  - 'design a secure session cookie strategy with httpOnly and sameSite flags'
+  - 'implement passwordless magic link authentication via email'
+  - 'handle role-based access control (RBAC) permission checks in middleware'
+  - 'implement single sign-on (SSO) using SAML 2.0 and Okta'
+  - 'securely hash and verify passwords using bcrypt or Argon2id'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'manage and rotate production API keys and database secrets'
+    expect: 'secrets-management'
+  - prompt: 'audit endpoints for unauthorized data access (BOLA)'
+    expect: 'security-review'
+  - prompt: 'design auth protocols between autonomous AI agents'
+    expect: 'agent-identity'

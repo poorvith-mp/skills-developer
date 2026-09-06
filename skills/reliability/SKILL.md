@@ -1,7 +1,9 @@
 ---
 name: reliability
+group: Ship and run
 description: >-
-  Set SLOs and error budgets, instrument with OpenTelemetry, and build the dashboards that prove them.
+  Set SLOs and error budgets, instrument with OpenTelemetry, and build the dashboards that prove
+  them. Use when designing SLIs/SLOs, circuit breakers, or disaster recovery.
 ---
 # Reliability
 

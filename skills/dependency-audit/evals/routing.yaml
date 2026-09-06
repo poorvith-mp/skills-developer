@@ -1,7 +1,16 @@
 should_fire:
-  - "help with dependency audit"
-  - "check dependencies for cves, license conflicts and breaking-change risk before upgrading."
-  - "run dependency-audit workflow"
+  - 'audit our package.json dependencies for known CVE vulnerabilities'
+  - 'resolve high-severity alerts from npm audit without breaking upgrades'
+  - 'scan our Python requirements for unmaintained or vulnerable packages'
+  - 'check our dependencies for GPL license violations before commercial release'
+  - 'protect against supply-chain attacks and typosquatting in our build pipeline'
+  - 'set up automated Dependabot or Renovate rules for dependency updates'
+  - 'evaluate if an abandoned open-source library should be replaced'
+  - 'audit transitive dependencies for security vulnerabilities and bloat'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'resolve open-source licensing and copyleft obligations'
+    expect: 'open-source-licensing'
+  - prompt: 'audit our application source code for OWASP bugs'
+    expect: 'security-review'
+  - prompt: 'configure cloud firewall and VPC security groups'
+    expect: 'cloud-security'

@@ -1,7 +1,16 @@
 should_fire:
-  - "help with job scheduling"
-  - "design scheduled jobs with timezone handling, overlap prevention, alerting and dependency order."
-  - "run job-scheduling workflow"
+  - 'set up reliable cron job scheduling using Temporal or Celery'
+  - 'handle distributed task locking so a scheduled job runs exactly once'
+  - 'implement retry logic and dead-letter queues for failed recurring tasks'
+  - 'schedule periodic data reconciliation jobs to run every night at 2 AM'
+  - 'monitor cron job execution and alert if a scheduled task fails to start'
+  - 'manage long-running workflow orchestration with durable execution'
+  - 'handle time zone shifts and daylight saving in scheduled jobs'
+  - 'design a scalable background job queue for processing millions of tasks'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'implement real-time WebSocket communication'
+    expect: 'realtime-systems'
+  - prompt: 'build an ETL data transformation pipeline in dbt'
+    expect: 'data-pipelines'
+  - prompt: 'implement standard REST API routes and business logic'
+    expect: 'backend-build'

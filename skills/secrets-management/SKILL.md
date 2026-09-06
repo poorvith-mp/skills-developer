@@ -1,7 +1,9 @@
 ---
 name: secrets-management
+group: Security
 description: >-
-  Handle keys properly: vaults, rotation, `.env` hygiene, pre-commit scanning, and purging a key already in git history.
+  Handle keys properly: vaults, rotation, `.env` hygiene, pre-commit scanning, and purging a key
+  already in git history. Use when managing environment secrets, Vault, KMS, or key rotation.
 ---
 # Secrets Management
 

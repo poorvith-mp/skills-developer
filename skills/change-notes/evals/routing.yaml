@@ -1,7 +1,16 @@
 should_fire:
-  - "help with change notes"
-  - "write commit messages, pr descriptions and changelog entries from the diff itself."
-  - "run change-notes workflow"
+  - 'generate user-facing release notes from our merged PRs since v2.4.0'
+  - 'write a clean CHANGELOG.md entry following the Keep a Changelog format'
+  - 'summarize breaking changes and upgrade steps for our next major release'
+  - 'categorize git commits into Features, Bug Fixes, and Performance improvements'
+  - 'draft an announcement summarizing what shipped in our latest sprint'
+  - 'determine whether these changes warrant a minor or major semver version bump'
+  - 'compile release notes highlighting the key improvements for customers'
+  - 'write upgrade instructions for developers updating to our new release'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'write the main repository README and setup guide'
+    expect: 'repo-docs'
+  - prompt: 'manage git tags, rebase, and merge operations'
+    expect: 'git-operations'
+  - prompt: 'write a marketing launch announcement thread'
+    expect: 'launch'

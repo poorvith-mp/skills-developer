@@ -1,7 +1,9 @@
 ---
 name: model-audit
+group: Data and AI
 description: >-
-  Independently review a model end to end: documentation, data reconstruction, replication and challenge.
+  Independently review a model end to end: documentation, data reconstruction, replication and
+  challenge. Use when conducting independent audits of ML models, bias, or data integrity.
 ---
 # Model Audit
 

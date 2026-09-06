@@ -1,7 +1,9 @@
 ---
 name: commerce-platform
+group: Domain-specific
 description: >-
-  Architect CMS commerce: cart pipeline, checkout, payment gateways and PCI boundaries.
+  Architect CMS commerce: cart pipeline, checkout, payment gateways and PCI boundaries. Use when
+  developing Shopify apps, Liquid themes, or Headless commerce.
 ---
 # Commerce Platform
 

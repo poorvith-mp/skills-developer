@@ -1,7 +1,9 @@
 ---
 name: smart-contract-audit
+group: Domain-specific
 description: >-
-  Audit contracts for reentrancy, access control flaws and oracle manipulation.
+  Audit contracts for reentrancy, access control flaws and oracle manipulation. Use when auditing
+  smart contracts for reentrancy, gas, or exploit risks.
 ---
 # Smart Contract Audit
 

@@ -1,7 +1,9 @@
 ---
 name: spec-writing
+group: Plan
 description: >-
-  Turn a vague request into a written spec: scope, non-goals, acceptance criteria and the edge cases that will bite.
+  Turn a vague request into a written spec: scope, non-goals, acceptance criteria and the edge
+  cases that will bite. Use when writing technical specifications, scope, and acceptance criteria.
 ---
 # Spec Writing
 

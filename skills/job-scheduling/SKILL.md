@@ -1,7 +1,9 @@
 ---
 name: job-scheduling
+group: Ship and run
 description: >-
   Design scheduled jobs with timezone handling, overlap prevention, alerting and dependency order.
+  Use when configuring cron jobs, distributed schedulers, or Celery/Temporal.
 ---
 # Job Scheduling
 

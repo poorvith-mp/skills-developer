@@ -1,7 +1,9 @@
 ---
 name: code-review
+group: Quality
 description: >-
-  Review a change for correctness, performance, security, readability, coverage and architectural fit.
+  Review a change for correctness, performance, security, readability, coverage and architectural
+  fit. Use when reviewing pull requests, diffs, or commits before merging.
 ---
 # Code Review
 

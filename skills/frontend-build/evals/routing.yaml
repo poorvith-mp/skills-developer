@@ -1,7 +1,16 @@
 should_fire:
-  - "help with frontend build"
-  - "implement web uis in react, vue or angular with attention to performance, state and correctness."
-  - "run frontend-build workflow"
+  - 'build a responsive data table component in React with sorting'
+  - 'implement this dashboard UI using Tailwind and Vue 3'
+  - 'create an accessible dropdown menu in TypeScript and React'
+  - 'handle optimistic UI updates for this likes button in Next.js'
+  - 'implement client-side form validation with Zod and React Hook Form'
+  - 'build a multi-step checkout form with state persistence'
+  - 'fix state synchronization issues across nested React components'
+  - 'implement infinite scroll with virtualized list rendering'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'audit our web app for WCAG 2.1 contrast compliance'
+    expect: 'accessibility-fix'
+  - prompt: 'design the wireframe and visual layout in Figma'
+    expect: 'ui-design'
+  - prompt: 'build a mobile app screen in SwiftUI'
+    expect: 'mobile-build'

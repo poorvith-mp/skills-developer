@@ -1,7 +1,9 @@
 ---
 name: authentication
+group: Security
 description: >-
-  Implement OAuth 2.0, OIDC, sessions, token lifetimes, MFA and password storage without rolling your own crypto.
+  Implement OAuth 2.0, OIDC, sessions, token lifetimes, MFA and password storage without rolling
+  your own crypto. Use when implementing auth flows, OAuth, JWT, MFA, or sessions.
 ---
 # Authentication
 

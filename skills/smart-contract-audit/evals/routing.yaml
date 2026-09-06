@@ -1,7 +1,16 @@
 should_fire:
-  - "help with smart contract audit"
-  - "audit contracts for reentrancy, access control flaws and oracle manipulation."
-  - "run smart-contract-audit workflow"
+  - 'audit this Solidity contract for reentrancy and flash loan attack vectors'
+  - 'check this DeFi protocol for integer overflow and oracle manipulation bugs'
+  - 'run Slither and static analysis tools on our smart contracts before mainnet'
+  - 'audit access control modifiers and owner privilege escalation risks'
+  - 'verify that this smart contract handles unspent ETH and refunds securely'
+  - 'review this token contract for front-running and MEV exploit vulnerabilities'
+  - 'conduct a formal verification check on our staking reward math'
+  - 'write a security audit report with vulnerability severities for our protocol'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'write new Solidity smart contracts from scratch'
+    expect: 'smart-contracts'
+  - prompt: 'audit standard web application code for OWASP Top 10 vulnerabilities'
+    expect: 'security-review'
+  - prompt: 'conduct penetration testing against our cloud API infrastructure'
+    expect: 'pen-test'

@@ -1,7 +1,9 @@
 ---
 name: realtime-systems
+group: Build
 description: >-
-  Build WebSocket, SSE and pub/sub features: presence, fan-out, reconnection and backpressure.
+  Build WebSocket, SSE and pub/sub features: presence, fan-out, reconnection and backpressure. Use
+  when building WebSockets, SSE, pub/sub, presence, or live feeds.
 ---
 # Realtime Systems
 

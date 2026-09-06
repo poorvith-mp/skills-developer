@@ -1,7 +1,16 @@
 should_fire:
-  - "help with infrastructure"
-  - "write terraform, pulumi or cloudformation and automate provisioning, state and drift detection."
-  - "run infrastructure workflow"
+  - 'write Terraform modules to provision an AWS VPC and ECS cluster'
+  - 'manage our cloud infrastructure as code using OpenTofu'
+  - 'create Pulumi scripts in TypeScript to provision an S3 bucket and CDN'
+  - 'refactor monolithic Terraform state into isolated remote state modules'
+  - 'set up Cloudflare DNS records and SSL certificates via Terraform'
+  - 'define production and staging environments cleanly using Terraform workspaces'
+  - 'handle drift detection between our deployed cloud resources and IaC'
+  - 'write IaC templates to spin up a managed RDS PostgreSQL database'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'audit our cloud spend and downscale unused instances'
+    expect: 'cloud-cost'
+  - prompt: 'configure our CI/CD GitHub Actions runner'
+    expect: 'ci-pipelines'
+  - prompt: 'configure security groups and IAM least-privilege'
+    expect: 'cloud-security'

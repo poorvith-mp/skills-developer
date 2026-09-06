@@ -1,7 +1,9 @@
 ---
 name: github-workflow
+group: Repo hygiene
 description: >-
-  Open and land PRs, respond to review comments, manage issues, labels, tags and releases through the `gh` CLI.
+  Open and land PRs, respond to review comments, manage issues, labels, tags and releases through
+  the `gh` CLI. Use when automating GitHub issues, PR templates, labels, or project boards.
 ---
 # Github Workflow
 

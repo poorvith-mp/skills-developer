@@ -1,7 +1,16 @@
 should_fire:
-  - "help with spec writing"
-  - "turn a vague request into a written spec"
-  - "run spec-writing workflow"
+  - 'write a technical spec for our new team permissions feature'
+  - 'turn this rough user request into a formal specification with non-goals'
+  - 'document edge cases and acceptance criteria for our refund engine'
+  - 'define the functional requirements and boundary conditions for this service'
+  - 'create an RFC document detailing scope and deliverables for this project'
+  - 'draft a technical design spec with input validation constraints'
+  - 'structure a specification for our rate limiting middleware'
+  - 'what edge cases should be captured in the spec for recurring billing'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'break this approved spec into ordered engineering tasks'
+    expect: 'implementation-plan'
+  - prompt: 'explore trade-offs between three caching libraries'
+    expect: 'solution-exploration'
+  - prompt: 'write the unit tests according to this spec'
+    expect: 'test-suite'

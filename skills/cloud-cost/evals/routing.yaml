@@ -1,7 +1,16 @@
 should_fire:
-  - "help with cloud cost"
-  - "cut cloud spend with unit economics, rightsizing, showback and commitment planning."
-  - "run cloud-cost workflow"
+  - 'our AWS bill spiked by 40% this month, help me find what caused it'
+  - 'identify unattached EBS volumes, idle load balancers, and orphaned resources'
+  - 'right-size our over-provisioned EC2 and RDS instances to cut costs'
+  - 'evaluate whether to purchase AWS Savings Plans or Reserved Instances'
+  - 'optimize S3 storage costs with lifecycle rules and intelligent tiering'
+  - 'cut our Datadog and logging ingest costs without losing critical alerts'
+  - 'implement FinOps tagging standards to allocate cloud costs per team'
+  - 'analyze Kubernetes pod resource requests and limits to reduce cluster size'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'harden AWS IAM roles and configure security perimeters'
+    expect: 'cloud-security'
+  - prompt: 'write Terraform files to provision new infrastructure'
+    expect: 'infrastructure'
+  - prompt: 'optimize slow SQL queries in our database'
+    expect: 'database'

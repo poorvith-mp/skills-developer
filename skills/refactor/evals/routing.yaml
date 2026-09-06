@@ -1,7 +1,16 @@
 should_fire:
-  - "help with refactor"
-  - "find structural smells and apply named refactorings without changing behaviour."
-  - "run refactor workflow"
+  - 'refactor this 500-line controller using the service-repository pattern'
+  - 'clean up code smells and extract helper functions in this file'
+  - 'simplify this complex nested conditional logic with guard clauses'
+  - 'refactor this duplicated database access code across 4 modules'
+  - 'apply the Strategy pattern to eliminate this messy switch statement'
+  - 'restructure this legacy module without altering any existing behavior'
+  - 'decompose this god class into cohesive, single-responsibility classes'
+  - 'clean up variable names and improve readability across this package'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'make the smallest surgical 2-line patch for this bug'
+    expect: 'minimal-diff'
+  - prompt: 'convert this JavaScript file to TypeScript'
+    expect: 'port-code'
+  - prompt: 'find why this function returns undefined on edge cases'
+    expect: 'debugging'

@@ -1,7 +1,9 @@
 ---
 name: repo-docs
+group: Repo hygiene
 description: >-
-  Write the README, setup guide and comments that explain intent rather than restate the code.
+  Write the README, setup guide and comments that explain intent rather than restate the code. Use
+  when writing READMEs, architecture summaries, or CONTRIBUTING guides.
 ---
 # Repo Docs
 

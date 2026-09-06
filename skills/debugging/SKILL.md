@@ -1,7 +1,9 @@
 ---
 name: debugging
+group: Quality
 description: >-
-  Turn a trace into a plain explanation, then isolate the cause by binary search and hypothesis testing.
+  Turn a trace into a plain explanation, then isolate the cause by binary search and hypothesis
+  testing. Use when diagnosing bugs, stack traces, race conditions, or failures.
 ---
 # Debugging
 

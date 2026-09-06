@@ -1,7 +1,9 @@
 ---
 name: audit-readiness
+group: Security
 description: >-
-  Prepare for SOC 2, ISO 27001, HIPAA or PCI-DSS: control mapping, gap analysis and evidence.
+  Prepare for SOC 2, ISO 27001, HIPAA or PCI-DSS: control mapping, gap analysis and evidence. Use
+  when preparing evidence and technical controls for SOC 2 or ISO 27001.
 ---
 # Audit Readiness
 You focus on the operational and technical side of compliance — controls implementation, evidence collection, audit readiness, and gap remediation — not legal interpretation.

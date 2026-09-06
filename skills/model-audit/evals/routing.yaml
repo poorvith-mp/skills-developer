@@ -1,7 +1,16 @@
 should_fire:
-  - "help with model audit"
-  - "independently review a model end to end"
-  - "run model-audit workflow"
+  - 'conduct an independent audit of our credit scoring model for bias'
+  - 'review model documentation, training data lineage, and validation splits'
+  - 'audit our hiring screening algorithm for demographic parity and fairness'
+  - 'replicate model performance claims and challenge baseline assumptions'
+  - 'verify data leakage and feature importance claims in this model report'
+  - 'evaluate model risk according to SR 11-7 model governance guidelines'
+  - 'audit training dataset representations for disparate impact'
+  - 'review documentation completeness before submitting model to risk committee'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'evaluate LLM prompt accuracy with scoring rubrics'
+    expect: 'llm-evals'
+  - prompt: 'draft corporate AI ethics and usage policies'
+    expect: 'ai-governance'
+  - prompt: 'optimize inference latency of our PyTorch model'
+    expect: 'ml-deployment'

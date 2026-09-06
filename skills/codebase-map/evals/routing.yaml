@@ -1,7 +1,16 @@
 should_fire:
-  - "help with codebase map"
-  - "map an unfamiliar codebase"
-  - "run codebase-map workflow"
+  - 'map this repository and explain where to start'
+  - 'give me an architectural overview of this codebase'
+  - 'what are the main entry points and data flows here'
+  - 'where does the core business logic live in this project'
+  - 'how do the services in this repo interact'
+  - 'I just cloned this project, help me navigate the architecture'
+  - 'trace how a user request flows through this stack'
+  - 'where should I add a new API route without breaking conventions'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'design a new microservices architecture from scratch'
+    expect: 'system-design'
+  - prompt: 'generate automated API documentation with OpenAPI'
+    expect: 'api-design'
+  - prompt: 'find and fix why this endpoint returns 500'
+    expect: 'debugging'

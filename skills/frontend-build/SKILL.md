@@ -1,7 +1,9 @@
 ---
 name: frontend-build
+group: Build
 description: >-
   Implement web UIs in React, Vue or Angular with attention to performance, state and correctness.
+  Use when implementing web user interfaces, client state, or components.
 ---
 # Frontend Build
 

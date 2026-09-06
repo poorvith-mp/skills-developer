@@ -1,7 +1,16 @@
 should_fire:
-  - "help with mobile build"
-  - "build mobile apps native or cross-platform, with real depth in swift/swiftui and kotlin/compose."
-  - "run mobile-build workflow"
+  - 'build a custom navigation stack in SwiftUI with path routing'
+  - 'implement an offline-first SQLite cache in Kotlin Multiplatform'
+  - 'create a smooth bottom sheet component in React Native'
+  - 'handle push notification payload routing in iOS'
+  - 'implement background location tracking with proper Android permissions'
+  - 'build an animated onboarding carousel for our Flutter app'
+  - 'handle app state transitions between foreground and background on iOS'
+  - 'write native bridging code for a custom camera module on Android'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'build a responsive web dashboard in React'
+    expect: 'frontend-build'
+  - prompt: 'optimize App Store keywords and screenshots'
+    expect: 'app-store-optimization'
+  - prompt: 'test mobile API endpoints for security leaks'
+    expect: 'security-review'

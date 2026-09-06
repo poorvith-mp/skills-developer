@@ -1,7 +1,9 @@
 ---
 name: llm-evals
+group: Data and AI
 description: >-
   Build evaluation harnesses: regression sets, scoring rubrics, drift detection and benchmarks.
+  Use when building LLM evaluation harnesses, scoring rubrics, or drift benchmarks.
 ---
 # Llm Evals
 

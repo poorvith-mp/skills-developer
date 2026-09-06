@@ -1,7 +1,16 @@
 should_fire:
-  - "help with developer platform"
-  - "build golden paths and self-service provisioning so teams stop rebuilding the same scaffolding."
-  - "run developer-platform workflow"
+  - 'build an internal CLI tool to scaffold new microservices for our team'
+  - 'design an internal developer portal (IDP) to standardize service creation'
+  - 'create reusable project templates with preconfigured linting and tests'
+  - 'streamline local development environments using Dev Containers or Nix'
+  - 'automate service catalog registration and team ownership tracking'
+  - 'reduce onboarding setup time for new engineers joining our repository'
+  - 'build standardized golden paths for deploying internal services'
+  - 'create custom dev tools to automate repetitive engineering workflows'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'build a customer-facing web dashboard in React'
+    expect: 'frontend-build'
+  - prompt: 'write documentation for the main project README'
+    expect: 'repo-docs'
+  - prompt: 'set up our CI build pipeline in GitHub Actions'
+    expect: 'ci-pipelines'

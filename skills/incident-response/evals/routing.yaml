@@ -1,7 +1,16 @@
 should_fire:
-  - "help with incident response"
-  - "run a live incident"
-  - "run incident-response workflow"
+  - 'we have a live production outage, help me triage the incoming errors'
+  - 'write a blameless post-mortem for yesterday''s 45-minute database downtime'
+  - 'structure incident commander roles and communication during an ongoing SEV-1'
+  - 'draft a public status page update explaining an ongoing service disruption'
+  - 'triage why 502 Bad Gateway errors spiked across all customer endpoints'
+  - 'coordinate an emergency hotfix rollout during an active incident'
+  - 'conduct a root cause analysis (RCA) meeting following an outage'
+  - 'create an incident response checklist and on-call escalation ladder'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'define proactive SLOs and error budgets before outages happen'
+    expect: 'reliability'
+  - prompt: 'debug a local unit test failure on my machine'
+    expect: 'debugging'
+  - prompt: 'investigate an active security breach or intrusion'
+    expect: 'threat-detection'

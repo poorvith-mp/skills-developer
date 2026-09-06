@@ -1,7 +1,9 @@
 ---
 name: developer-platform
+group: Ship and run
 description: >-
   Build golden paths and self-service provisioning so teams stop rebuilding the same scaffolding.
+  Use when building internal developer portals, CLI scaffolds, or dev tooling.
 ---
 # Developer Platform
 

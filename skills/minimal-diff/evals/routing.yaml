@@ -1,7 +1,16 @@
 should_fire:
-  - "help with minimal diff"
-  - "make the smallest correct change that fixes the problem, resisting every incidental refactor."
-  - "run minimal-diff workflow"
+  - 'fix this off-by-one error with the smallest possible diff'
+  - 'make a surgical one-line bug fix without touching surrounding code'
+  - 'patch this null pointer crash without refactoring the file'
+  - 'fix this regression without introducing incidental stylistic changes'
+  - 'apply the minimal code change to fix this failing test'
+  - 'repair this edge-case bug with zero collateral changes'
+  - 'patch this production issue with the tightest possible patch'
+  - 'resolve this bug while keeping the git diff under 10 lines'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'refactor this legacy module to use modern patterns'
+    expect: 'refactor'
+  - prompt: 'trace the root cause of this intermittent memory leak'
+    expect: 'debugging'
+  - prompt: 'rewrite this component from scratch in TypeScript'
+    expect: 'port-code'

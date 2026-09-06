@@ -1,7 +1,9 @@
 ---
 name: webhooks
+group: Domain-specific
 description: >-
-  Build webhook receivers with signature verification, idempotency, retries and dead letter queues.
+  Build webhook receivers with signature verification, idempotency, retries and dead letter
+  queues. Use when implementing, verifying, or signing incoming/outgoing webhooks.
 ---
 # Webhooks
 

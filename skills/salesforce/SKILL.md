@@ -1,7 +1,9 @@
 ---
 name: salesforce
+group: Domain-specific
 description: >-
   Architect Salesforce: multi-cloud design, integration patterns, governor limits and deployment.
+  Use when developing Apex, Lightning Web Components, or Salesforce flows.
 ---
 # Salesforce
 

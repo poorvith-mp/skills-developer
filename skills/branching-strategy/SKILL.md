@@ -1,7 +1,10 @@
 ---
 name: branching-strategy
+group: Repo hygiene
 description: >-
-  Design the branching and release model: trunk-based or GitFlow, protection rules, review policy, tracker traceability.
+  Design the branching and release model: trunk-based or GitFlow, protection rules, review policy,
+  tracker traceability. Use when establishing Git flow, trunk-based development, or merge
+  policies.
 ---
 # Branching Strategy
 

@@ -1,7 +1,9 @@
 ---
 name: solution-exploration
+group: Plan
 description: >-
-  Diverge before committing: generate genuinely different approaches, name the trade-off each makes, and kill what doesn't survive.
+  Diverge before committing: generate genuinely different approaches, name trade-offs, and kill
+  what doesn't survive. Use when exploring architectural trade-offs.
 ---
 # Solution Exploration
 

@@ -1,7 +1,9 @@
 ---
 name: data-pipelines
+group: Data and AI
 description: >-
-  Build ETL/ELT and streaming pipelines with quality validation, schema evolution and anomaly correction.
+  Build ETL/ELT and streaming pipelines with quality validation, schema evolution and anomaly
+  correction. Use when building ETL/ELT pipelines, streaming data, or schema validation.
 ---
 # Data Pipelines
 

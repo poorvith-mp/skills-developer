@@ -1,7 +1,16 @@
 should_fire:
-  - "help with migration"
-  - "map the debt, plan a strangler migration, and execute the zero-downtime cutover."
-  - "run migration workflow"
+  - 'plan a zero-downtime database migration from MongoDB to PostgreSQL'
+  - 'migrate our legacy monolithic Rails backend to Go microservices'
+  - 'execute a phased data migration with dual-writing and verification'
+  - 'migrate our frontend from Webpack to Vite without breaking the build'
+  - 'plan the technical migration of 10M customer records to a new schema'
+  - 'safely sunset a legacy v1 API while routing traffic to v2'
+  - 'how to migrate from Vue 2 to Vue 3 with minimal disruption'
+  - 'design a rollback strategy for our upcoming major platform migration'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'port a single Python script into Go syntax'
+    expect: 'port-code'
+  - prompt: 'consolidate multiple standalone repos into a monorepo'
+    expect: 'monorepo'
+  - prompt: 'refactor messy functions within an existing module'
+    expect: 'refactor'

@@ -1,7 +1,16 @@
 should_fire:
-  - "help with threat detection"
-  - "write detection rules, correlate siem telemetry and map behaviour to mitre att&ck."
-  - "run threat-detection workflow"
+  - 'write SIEM detection rules for brute force login attempts'
+  - 'set up alerts for anomalous API token usage across multiple geographic regions'
+  - 'detect potential credential stuffing attacks in our access logs'
+  - 'build an alerting pipeline for suspicious privilege escalation in AWS'
+  - 'configure Datadog or ELK security monitoring rules for web attacks'
+  - 'create automated playbooks for isolating compromised API tokens'
+  - 'monitor outbound network traffic for signs of data exfiltration'
+  - 'design log aggregation rules to detect lateral movement across servers'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'handle an active live outage or system downtime'
+    expect: 'incident-response'
+  - prompt: 'perform penetration testing against our web endpoints'
+    expect: 'pen-test'
+  - prompt: 'configure security groups and network ACLs for our database'
+    expect: 'cloud-security'

@@ -1,7 +1,16 @@
 should_fire:
-  - "help with load testing"
-  - "design and run load tests with realistic traffic patterns against a stated baseline."
-  - "run load-testing workflow"
+  - 'write a k6 script to load test our checkout API at 1,000 requests per second'
+  - 'simulate 5,000 concurrent users with Locust to find system breaking points'
+  - 'benchmark our WebSocket cluster under heavy connection surges'
+  - 'measure throughput and error rates during a simulated traffic spike'
+  - 'design a stress test to verify our autoscaling policies trigger correctly'
+  - 'run a soak test to see how the system behaves over 12 hours of high traffic'
+  - 'identify max concurrency before our API response times degrade beyond 2s'
+  - 'create load testing scenarios for our upcoming flash sale'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'profile a single slow query in Postgres'
+    expect: 'database'
+  - prompt: 'audit Core Web Vitals on our marketing landing page'
+    expect: 'performance-audit'
+  - prompt: 'write unit tests for individual functions'
+    expect: 'test-suite'

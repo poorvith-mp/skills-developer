@@ -1,7 +1,16 @@
 should_fire:
-  - "help with smart contracts"
-  - "write solidity for evm"
-  - "run smart-contracts workflow"
+  - 'write an ERC-20 token smart contract in Solidity with permit support'
+  - 'implement an ERC-721 NFT contract with metadata and royalty standards'
+  - 'write an upgradeable proxy contract pattern using OpenZeppelin'
+  - 'optimize gas consumption in a Solidity staking contract'
+  - 'implement an on-chain automated market maker (AMM) pool swap function'
+  - 'write automated Foundry tests to fuzz our Solidity contract functions'
+  - 'implement multi-signature transaction execution in a governance contract'
+  - 'handle safe ERC-20 token transfers and reentrancy guards in Solidity'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'audit an existing smart contract for exploits and reentrancy bugs'
+    expect: 'smart-contract-audit'
+  - prompt: 'build a React frontend Web3 wallet connection interface'
+    expect: 'frontend-build'
+  - prompt: 'calculate capital gains tax for cryptocurrency trades'
+    expect: 'crypto-tax'

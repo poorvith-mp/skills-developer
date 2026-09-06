@@ -1,7 +1,16 @@
 should_fire:
-  - "help with pen test"
-  - "run authorised penetration tests and red team exercises against apps, networks and cloud."
-  - "run pen-test workflow"
+  - 'plan a web application penetration test scope and attack methodology'
+  - 'test our API against automated fuzzing to discover unhandled edge cases'
+  - 'attempt privilege escalation across our multi-tenant tenant boundaries'
+  - 'simulate an adversary testing our rate limit bypass techniques'
+  - 'test our password reset flow for token predictability or race conditions'
+  - 'validate whether our WAF actually blocks malicious SQL injection payloads'
+  - 'conduct a vulnerability assessment on our staging environment before launch'
+  - 'write a penetration testing report documenting proof-of-concept exploits'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'review code changes for static security bugs before merge'
+    expect: 'security-review'
+  - prompt: 'prepare compliance documentation for SOC 2 Type II audit'
+    expect: 'audit-readiness'
+  - prompt: 'set up SIEM rules to detect brute force attacks in logs'
+    expect: 'threat-detection'

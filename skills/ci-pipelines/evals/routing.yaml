@@ -1,7 +1,16 @@
 should_fire:
-  - "help with ci pipelines"
-  - "build ci/cd with build, test, security scan and deploy stages across common providers."
-  - "run ci-pipelines workflow"
+  - 'create a GitHub Actions workflow to run lint, test, and typecheck on PRs'
+  - 'optimize our CI pipeline cache to cut build times from 15m to 3m'
+  - 'set up matrix builds to test our library across Node 18, 20, and 22'
+  - 'configure automated preview environment deployments on pull requests'
+  - 'implement automated release publishing and changelog generation in CI'
+  - 'troubleshoot a failing GitLab CI pipeline runner or cache issue'
+  - 'secure our CI workflows against untrusted pull request execution'
+  - 'parallelize our test suite in CI with sharding across 4 runners'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'deploy our built container to production Kubernetes'
+    expect: 'deployment'
+  - prompt: 'write Terraform files to provision our cloud infrastructure'
+    expect: 'infrastructure'
+  - prompt: 'fix a failing unit test in our test suite'
+    expect: 'test-suite'

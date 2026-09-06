@@ -1,7 +1,16 @@
 should_fire:
-  - "help with github workflow"
-  - "open and land prs, respond to review comments, manage issues, labels, tags and releases through the `gh` cli."
-  - "run github-workflow workflow"
+  - 'create GitHub issue templates with structured YAML forms'
+  - 'set up a pull request template with a verification checklist'
+  - 'automate triage labels and milestone assignment with GitHub Actions'
+  - 'configure branch protection rules requiring code owner reviews'
+  - 'automate moving cards on our GitHub Project board when PRs are linked'
+  - 'set up auto-closing of stale issues and pull requests'
+  - 'configure CODEOWNERS to route PR reviews to the right domain teams'
+  - 'create automated PR comments with bundle size and test coverage reports'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'write CI test execution and build workflows'
+    expect: 'ci-pipelines'
+  - prompt: 'resolve git rebase conflicts in terminal'
+    expect: 'git-operations'
+  - prompt: 'write the main repository CONTRIBUTING guide'
+    expect: 'repo-docs'

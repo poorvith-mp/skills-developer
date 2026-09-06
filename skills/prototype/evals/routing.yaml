@@ -1,7 +1,16 @@
 should_fire:
-  - "help with prototype"
-  - "build something working fast, choosing throwaway shortcuts deliberately and marking what must be rebuilt."
-  - "run prototype workflow"
+  - 'build a quick proof-of-concept for this PDF extraction idea'
+  - 'hack together a working MVP in one afternoon to test demand'
+  - 'create a throwaway script to see if this third-party API actually works'
+  - 'prototype a CLI tool to automate this manual spreadsheet cleanup'
+  - 'build a rapid spike to evaluate feasibility of this vector search feature'
+  - 'mock up a quick working demo with hardcoded data'
+  - 'create a rough working prototype of this webhook forwarder'
+  - 'hack together an interactive demo to show stakeholders tomorrow'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'refactor production code for long-term maintainability'
+    expect: 'refactor'
+  - prompt: 'write a complete production test suite with mocks'
+    expect: 'test-suite'
+  - prompt: 'make the minimal diff fix for this production bug'
+    expect: 'minimal-diff'

@@ -1,7 +1,16 @@
 should_fire:
-  - "help with accessibility fix"
-  - "audit and refactor code for wcag 2.1/2.2 aa and aaa"
-  - "run accessibility-fix workflow"
+  - 'audit this webpage for WCAG 2.1 AA accessibility violations'
+  - 'fix missing ARIA labels and roles on our custom modal dialog'
+  - 'remediate keyboard focus trapping in our dropdown navigation menu'
+  - 'improve color contrast ratios across our UI to meet AAA standards'
+  - 'make this data table fully navigable and announced by screen readers'
+  - 'fix form inputs lacking associated label elements and error descriptions'
+  - 'audit our tab navigation sequence to eliminate focus jumping'
+  - 'ensure dynamic live regions announce notifications to screen reader users'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'review UI visual design aesthetics and hierarchy'
+    expect: 'ui-design'
+  - prompt: 'audit website page speed and Core Web Vitals'
+    expect: 'performance-audit'
+  - prompt: 'build standard React frontend components'
+    expect: 'frontend-build'

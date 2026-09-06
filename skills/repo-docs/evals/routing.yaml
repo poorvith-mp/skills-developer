@@ -1,7 +1,16 @@
 should_fire:
-  - "help with repo docs"
-  - "write the readme, setup guide and comments that explain intent rather than restate the code."
-  - "run repo-docs workflow"
+  - 'write a comprehensive, developer-friendly README for our open-source repo'
+  - 'draft a CONTRIBUTING.md guide with setup steps and PR guidelines'
+  - 'create an ARCHITECTURE.md document explaining our folder structure'
+  - 'write local development setup instructions that actually work on day one'
+  - 'document how to run tests, linters, and local builds for new contributors'
+  - 'improve the readability and structure of our repository documentation'
+  - 'create a CODE_OF_CONDUCT.md and issue templates for GitHub'
+  - 'document our environment variable requirements in a clean .env.example guide'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'generate release notes and CHANGELOG entries'
+    expect: 'change-notes'
+  - prompt: 'document public REST API contracts with OpenAPI'
+    expect: 'api-design'
+  - prompt: 'write internal standard operating procedures (SOPs)'
+    expect: 'sop-writing'

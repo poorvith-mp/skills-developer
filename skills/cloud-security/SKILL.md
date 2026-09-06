@@ -1,7 +1,9 @@
 ---
 name: cloud-security
+group: Security
 description: >-
-  Design identity boundaries, network segmentation, key management and workload isolation.
+  Design identity boundaries, network segmentation, key management and workload isolation. Use
+  when configuring cloud security, IAM least-privilege, or VPC perimeters.
 ---
 # Cloud Security
 

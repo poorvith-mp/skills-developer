@@ -1,7 +1,9 @@
 ---
 name: incident-response
+group: Ship and run
 description: >-
-  Run a live incident: severity call, triage, stakeholder comms, mitigation and the writeup.
+  Run a live incident: severity call, triage, stakeholder comms, mitigation and the writeup. Use
+  when managing live production outages, triage, or post-mortems.
 ---
 # Incident Response
 

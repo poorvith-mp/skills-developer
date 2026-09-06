@@ -1,7 +1,16 @@
 should_fire:
-  - "help with webhooks"
-  - "build webhook receivers with signature verification, idempotency, retries and dead letter queues."
-  - "run webhooks workflow"
+  - 'implement HMAC signature verification for incoming Stripe webhooks'
+  - 'build a reliable webhook delivery system with exponential retries and backoff'
+  - 'handle idempotency keys to prevent processing duplicate webhook events'
+  - 'design outgoing webhook payload schemas and developer documentation'
+  - 'set up dead-letter queues for undeliverable webhook notifications'
+  - 'debug why our webhook consumer drops events during traffic bursts'
+  - 'handle webhook replay attacks using timestamp verification headers'
+  - 'test webhook delivery locally using ngrok or mock payloads'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'build real-time bidirectional WebSocket chat'
+    expect: 'realtime-systems'
+  - prompt: 'design standard CRUD REST endpoints'
+    expect: 'api-design'
+  - prompt: 'build an ETL streaming data pipeline'
+    expect: 'data-pipelines'

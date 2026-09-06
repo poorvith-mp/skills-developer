@@ -1,7 +1,16 @@
 should_fire:
-  - "help with database"
-  - "design schemas with the right relationships, indexes and normalisation, then fix the queries that turn out slow."
-  - "run database workflow"
+  - 'design a normalized schema for an inventory management system'
+  - 'why is this PostgreSQL query doing a sequential scan'
+  - 'help me write an index strategy for high-volume time-series inserts'
+  - 'optimize this slow JOIN query with EXPLAIN ANALYZE'
+  - 'how should we partition this multi-gigabyte audit log table'
+  - 'design foreign key constraints and cascade rules for user deletion'
+  - 'resolve a deadlock occurring during concurrent updates'
+  - 'should we use composite indexes or separate single-column indexes here'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'set up Redis pub/sub for live chat'
+    expect: 'realtime-systems'
+  - prompt: 'design REST endpoints for our inventory model'
+    expect: 'api-design'
+  - prompt: 'cut our AWS RDS instance costs'
+    expect: 'cloud-cost'

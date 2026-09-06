@@ -1,7 +1,16 @@
 should_fire:
-  - "help with data pipelines"
-  - "build etl/elt and streaming pipelines with quality validation, schema evolution and anomaly correction."
-  - "run data-pipelines workflow"
+  - 'build an ETL pipeline to ingest CSVs from S3 into Snowflake'
+  - 'write an incremental data sync script with schema validation'
+  - 'handle backfills and deduplication in our data warehouse ingestion'
+  - 'create an automated streaming pipeline with Kafka and PySpark'
+  - 'validate data quality and check for missing fields across parquet files'
+  - 'implement change data capture (CDC) from Postgres to BigQuery'
+  - 'build a transformation pipeline in dbt for daily analytics aggregation'
+  - 'handle schema evolution and null anomalies in our event pipeline'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'design schemas and indexes for our transactional database'
+    expect: 'database'
+  - prompt: 'deploy and serve an ML model behind a REST API'
+    expect: 'ml-deployment'
+  - prompt: 'build an evaluation harness for LLM prompts'
+    expect: 'llm-evals'

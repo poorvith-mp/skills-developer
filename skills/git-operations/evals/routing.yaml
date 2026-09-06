@@ -1,7 +1,16 @@
 should_fire:
-  - "help with git operations"
-  - "do the actual git work"
-  - "run git-operations workflow"
+  - 'help me resolve a nasty merge conflict during an interactive rebase'
+  - 'how do I recover a deleted branch or commit using git reflog'
+  - 'squash the last 5 commits into one clean atomic commit'
+  - 'split a large commit into two separate focused commits'
+  - 'safely undo a pushed commit without rewriting shared git history'
+  - 'rebase my feature branch on main while keeping my commit signatures'
+  - 'cherry-pick a critical hotfix into our production release branch'
+  - 'remove a large binary file accidentally committed to git history'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'manage binary game assets with Git LFS or Perforce'
+    expect: 'game-version-control'
+  - prompt: 'define our team''s branching strategy and merge rules'
+    expect: 'branching-strategy'
+  - prompt: 'automate release workflows using GitHub Actions'
+    expect: 'github-workflow'

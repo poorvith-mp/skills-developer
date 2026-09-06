@@ -1,7 +1,16 @@
 should_fire:
-  - "help with security review"
-  - "threat model with stride and audit code against the owasp top 10 before it ships."
-  - "run security-review workflow"
+  - 'review this pull request for OWASP Top 10 security vulnerabilities'
+  - 'audit our file upload handler for path traversal and arbitrary execution'
+  - 'check our API endpoints for Broken Object Level Authorization (BOLA)'
+  - 'is this custom hashing implementation vulnerable to timing attacks'
+  - 'review our CORS configuration and CSRF protection mechanisms'
+  - 'audit our session management logic for token hijacking risks'
+  - 'check our database query construction for SQL injection vectors'
+  - 'review this OAuth callback handler for open redirect vulnerabilities'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'audit our AWS IAM policies for overly permissive wildcard permissions'
+    expect: 'cloud-security'
+  - prompt: 'conduct simulated penetration tests against our staging domain'
+    expect: 'pen-test'
+  - prompt: 'audit npm dependencies for known CVEs'
+    expect: 'dependency-audit'

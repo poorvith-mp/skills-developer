@@ -1,7 +1,16 @@
 should_fire:
-  - "help with speech pipelines"
-  - "build voice pipelines from audio ingestion through whisper-style or cloud asr to structured output."
-  - "run speech-pipelines workflow"
+  - 'build an audio transcription pipeline using Whisper and ffmpeg'
+  - 'process incoming audio streams and convert them to structured JSON'
+  - 'handle speaker diarization and audio chunking for long meeting recordings'
+  - 'integrate real-time voice streaming with Deepgram or OpenAI Whisper'
+  - 'clean up noisy audio files before feeding them to speech recognition'
+  - 'set up batch transcription for podcast audio files in S3'
+  - 'handle silence detection and audio resampling in a voice pipeline'
+  - 'convert multi-speaker audio into timestamped transcriptions'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'build an ETL pipeline for tabular analytics data'
+    expect: 'data-pipelines'
+  - prompt: 'synthesize voice for video marketing production'
+    expect: 'video-production'
+  - prompt: 'build real-time WebSocket communication for chat'
+    expect: 'realtime-systems'

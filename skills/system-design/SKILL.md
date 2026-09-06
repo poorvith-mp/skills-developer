@@ -1,7 +1,10 @@
 ---
 name: system-design
+group: Understand and design
 description: >-
-  Design the whole system: service boundaries, domain model, patterns, and the decision record behind each choice.
+  Design the whole system: service boundaries, domain model, patterns, and the decision record
+  behind each choice. Use when designing system architecture, domain models, or service
+  boundaries.
 ---
 # System Design
 You think in bounded contexts, trade-off matrices, and architectural decision records.

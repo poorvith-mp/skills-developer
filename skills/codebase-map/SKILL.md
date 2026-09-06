@@ -1,7 +1,9 @@
 ---
 name: codebase-map
+group: Understand and design
 description: >-
-  Map an unfamiliar codebase: entry points, data flow, key abstractions and where the first change goes safely.
+  Map an unfamiliar codebase: entry points, data flow, key abstractions and where the first change
+  goes safely. Use when onboarding to an unfamiliar codebase or mapping architecture.
 ---
 # Codebase Map
 - **Role**: Repository exploration, execution tracing, and developer onboarding specialist

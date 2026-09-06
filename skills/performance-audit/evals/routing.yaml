@@ -1,7 +1,16 @@
 should_fire:
-  - "help with performance audit"
-  - "profile and fix slowness across core web vitals, backend queries and infrastructure."
-  - "run performance-audit workflow"
+  - 'audit our web app for slow Core Web Vitals and poor LCP scores'
+  - 'profile this API endpoint to find where the 800ms latency is spent'
+  - 'find why our React app drops frames during scroll animations'
+  - 'audit our frontend bundle size and identify heavy unused dependencies'
+  - 'identify why our database connection pool gets exhausted under load'
+  - 'analyze this CPU profile to find performance bottlenecks in our backend'
+  - 'optimize critical rendering path and reduce First Contentful Paint'
+  - 'find bottlenecks causing slow server response times on our API'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'run simulated traffic to test server limits and breaking points'
+    expect: 'load-testing'
+  - prompt: 'track down why this state update causes an infinite re-render loop'
+    expect: 'debugging'
+  - prompt: 'optimize 3D game engine draw calls and frame rate'
+    expect: 'game-performance'

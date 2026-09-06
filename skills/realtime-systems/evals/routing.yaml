@@ -1,7 +1,16 @@
 should_fire:
-  - "help with realtime systems"
-  - "build websocket, sse and pub/sub features"
-  - "run realtime-systems workflow"
+  - 'implement a WebSocket server for real-time chat with room multiplexing'
+  - 'set up Server-Sent Events (SSE) for streaming LLM responses to clients'
+  - 'build a real-time user presence system using Redis pub/sub'
+  - 'handle WebSocket reconnection logic with client heartbeats and backpressure'
+  - 'broadcast live notifications across multiple server instances'
+  - 'implement collaborative document cursor syncing over WebSockets'
+  - 'scale our Socket.io cluster using Redis adapter'
+  - 'handle graceful disconnection and message queuing for offline clients'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'build a standard CRUD REST API endpoint'
+    expect: 'backend-build'
+  - prompt: 'configure an SQS queue worker'
+    expect: 'backend-build'
+  - prompt: 'design WebSocket schema contracts with protobuf'
+    expect: 'api-design'

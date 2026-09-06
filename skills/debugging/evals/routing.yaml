@@ -1,7 +1,16 @@
 should_fire:
-  - "help with debugging"
-  - "turn a trace into a plain explanation, then isolate the cause by binary search and hypothesis testing."
-  - "run debugging workflow"
+  - 'why is this function throwing an unhandled TypeError: cannot read property of null'
+  - 'diagnose this intermittent race condition occurring during parallel requests'
+  - 'help me trace why this user session is getting logged out unexpectedly'
+  - 'troubleshoot this unexpected undefined return value in our service'
+  - 'debug this stack trace from our production error logs'
+  - 'why does this query return empty results when matching records exist'
+  - 'track down why this state update causes an infinite re-render loop'
+  - 'find the root cause of this silent failure in our background worker'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'profile why memory usage grows over time and causes latency'
+    expect: 'performance-audit'
+  - prompt: 'audit website Core Web Vitals and slow page renders'
+    expect: 'performance-audit'
+  - prompt: 'make a 1-line surgical fix for this already identified bug'
+    expect: 'minimal-diff'

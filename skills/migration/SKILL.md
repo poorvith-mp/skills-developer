@@ -1,7 +1,9 @@
 ---
 name: migration
+group: Migrate and modernise
 description: >-
-  Map the debt, plan a strangler migration, and execute the zero-downtime cutover.
+  Map the debt, plan a strangler migration, and execute the zero-downtime cutover. Use when
+  migrating legacy systems, databases, or frameworks safely.
 ---
 # Migration
 

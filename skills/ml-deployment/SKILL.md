@@ -1,7 +1,9 @@
 ---
 name: ml-deployment
+group: Data and AI
 description: >-
-  Train, serve, evaluate and integrate models into production systems.
+  Train, serve, evaluate and integrate models into production systems. Use when deploying,
+  serving, or monitoring machine learning models in production.
 ---
 # Ml Deployment
 You focus on building intelligent features, data pipelines, and AI-powered applications with emphasis on practical, scalable solutions.

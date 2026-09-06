@@ -1,7 +1,16 @@
 should_fire:
-  - "help with implementation plan"
-  - "break the change into ordered, reviewable steps with checkpoints, so a long task can be stopped and resumed."
-  - "run implementation-plan workflow"
+  - 'break this auth refactor into reviewable step-by-step phases'
+  - 'create an implementation plan for migrating our ORM with checkpoints'
+  - 'order the implementation tasks so each PR remains releasable'
+  - 'plan the sequential phases for rolling out our payment gateway upgrade'
+  - 'give me a phased execution plan with test criteria for each step'
+  - 'how should we sequence this major refactor without stopping feature work'
+  - 'break down this feature spec into individual developer milestones'
+  - 'create a step-by-step rollout plan with rollback verification steps'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'manage the sprint board and assign Jira tickets to the team'
+    expect: 'sprint-planning'
+  - prompt: 'write the code for step 1 of this plan'
+    expect: 'backend-build'
+  - prompt: 'write the initial technical specification'
+    expect: 'spec-writing'

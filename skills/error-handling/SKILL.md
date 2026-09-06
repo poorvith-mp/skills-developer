@@ -1,7 +1,9 @@
 ---
 name: error-handling
+group: Domain-specific
 description: >-
-  Design boundaries, fallbacks, retries, circuit breakers and graceful degradation paths.
+  Design boundaries, fallbacks, retries, circuit breakers and graceful degradation paths. Use when
+  designing error boundaries, custom exceptions, or retry policies.
 ---
 # Error Handling
 

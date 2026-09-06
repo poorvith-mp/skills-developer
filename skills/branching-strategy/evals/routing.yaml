@@ -1,7 +1,16 @@
 should_fire:
-  - "help with branching strategy"
-  - "design the branching and release model"
-  - "run branching-strategy workflow"
+  - 'help us choose between Git Flow and Trunk-Based Development for our team'
+  - 'design branch protection rules and required status checks for GitHub'
+  - 'establish conventions for feature branches, hotfixes, and release branches'
+  - 'how should our team manage release candidates without blocking main'
+  - 'set up rules for linear git history and squashing pull requests'
+  - 'define guidelines for long-running feature flags vs short-lived branches'
+  - 'streamline our branch merge process to reduce merge conflicts across squads'
+  - 'create a branching policy for continuous deployment to staging and prod'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'resolve a complex interactive git rebase conflict'
+    expect: 'git-operations'
+  - prompt: 'configure GitHub Actions CI workflows for PRs'
+    expect: 'ci-pipelines'
+  - prompt: 'write a CHANGELOG for our latest release'
+    expect: 'change-notes'

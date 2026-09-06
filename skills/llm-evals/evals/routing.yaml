@@ -1,7 +1,16 @@
 should_fire:
-  - "help with llm evals"
-  - "build evaluation harnesses"
-  - "run llm-evals workflow"
+  - 'build an evaluation dataset to test prompt changes for our summarizer'
+  - 'create an LLM-as-a-judge scoring rubric for response faithfulness'
+  - 'set up regression testing for our RAG pipeline across 100 test queries'
+  - 'measure semantic similarity and hallucination rates across model versions'
+  - 'benchmark Claude vs GPT-4 on our domain-specific extraction tasks'
+  - 'track response quality drift across prompt iterations'
+  - 'create a ground-truth test suite for our customer support agent prompts'
+  - 'build automated CI checks that fail if prompt accuracy drops below 95%'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'engineer better system prompts for our customer agent'
+    expect: 'prompt-engineering'
+  - prompt: 'audit a traditional credit scoring model for regulatory compliance'
+    expect: 'model-audit'
+  - prompt: 'write unit tests for our backend Python API'
+    expect: 'test-suite'

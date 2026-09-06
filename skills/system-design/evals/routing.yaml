@@ -1,7 +1,16 @@
 should_fire:
-  - "help with system design"
-  - "design the whole system"
-  - "run system-design workflow"
+  - 'design the backend architecture for an event-driven notification system'
+  - 'how should we structure our domain models and service boundaries'
+  - 'write an architectural decision record for our message broker choice'
+  - 'design a scalable multi-tenant SaaS backend'
+  - 'what patterns should we use for distributed transactions across services'
+  - 'help me define the bounded contexts for this e-commerce app'
+  - 'architect a high-throughput ingestion pipeline with failover'
+  - 'create a system design document for our new billing service'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'implement the Express routes and middleware'
+    expect: 'backend-build'
+  - prompt: 'benchmark query performance on PostgreSQL'
+    expect: 'database'
+  - prompt: 'evaluate AWS Lambda vs Google Cloud Run pricing'
+    expect: 'stack-choice'

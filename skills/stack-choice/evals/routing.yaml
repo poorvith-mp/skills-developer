@@ -1,7 +1,16 @@
 should_fire:
-  - "help with stack choice"
-  - "evaluate technology options against requirements, team skill, scale and total cost, and record why."
-  - "run stack-choice workflow"
+  - 'compare Next.js vs Remix for our SEO-heavy web application'
+  - 'should we choose Postgres or DynamoDB for our user event storage'
+  - 'evaluate Python vs Go for our microservices rewrite'
+  - 'help us decide between Tailwind CSS and CSS Modules'
+  - 'what are the trade-offs between REST and gRPC for internal services'
+  - 'evaluate frontend frameworks for our enterprise dashboard'
+  - 'compare Kafka vs RabbitMQ for our messaging requirements'
+  - 'document a technology selection matrix with cost and team skill trade-offs'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'design the microservice boundaries for this stack'
+    expect: 'system-design'
+  - prompt: 'build the initial scaffold in Next.js'
+    expect: 'frontend-build'
+  - prompt: 'audit dependencies for security vulnerabilities'
+    expect: 'dependency-audit'

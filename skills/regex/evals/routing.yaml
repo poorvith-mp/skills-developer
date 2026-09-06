@@ -1,7 +1,16 @@
 should_fire:
-  - "help with regex"
-  - "build and explain regular expressions with a breakdown of what each part matches and misses."
-  - "run regex workflow"
+  - 'write a regex to parse and validate international phone numbers'
+  - 'debug why this regular expression causes catastrophic backtracking'
+  - 'create a regex to extract URLs and query parameters from text'
+  - 'optimize this slow regex for high-throughput log line parsing'
+  - 'write a pattern to validate email addresses according to RFC standards'
+  - 'explain what this complex regular expression is matching step by step'
+  - 'extract named capture groups from structured log strings using regex'
+  - 'construct a regex to find all markdown link references in a document'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'build an ETL pipeline to parse and clean incoming streaming data'
+    expect: 'data-pipelines'
+  - prompt: 'build a full lexer and compiler grammar'
+    expect: 'solution-exploration'
+  - prompt: 'validate form inputs using Zod or Yup schemas'
+    expect: 'frontend-build'

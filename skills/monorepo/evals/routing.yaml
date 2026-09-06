@@ -1,7 +1,16 @@
 should_fire:
-  - "help with monorepo"
-  - "structure a monorepo with build caching, affected-module detection and workspace boundaries."
-  - "run monorepo workflow"
+  - 'configure Turborepo for our TypeScript frontend and backend packages'
+  - 'set up an Nx workspace with shared UI components and internal packages'
+  - 'establish clean package boundaries and dependency rules in our monorepo'
+  - 'configure pnpm workspaces for caching and rapid local linking'
+  - 'optimize monorepo CI builds using affected-only task execution'
+  - 'migrate 4 separate repositories into a unified monorepo structure'
+  - 'manage shared TypeScript configs and ESLint rules across all monorepo apps'
+  - 'troubleshoot dependency hoisting and phantom dependency issues in pnpm'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'set up git branching strategy and release branches'
+    expect: 'branching-strategy'
+  - prompt: 'write GitHub Actions scripts for a single app'
+    expect: 'ci-pipelines'
+  - prompt: 'build an internal CLI tool for the team'
+    expect: 'developer-platform'

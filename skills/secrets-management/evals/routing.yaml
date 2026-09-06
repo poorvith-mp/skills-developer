@@ -1,7 +1,16 @@
 should_fire:
-  - "help with secrets management"
-  - "handle keys properly"
-  - "run secrets-management workflow"
+  - 'set up HashiCorp Vault for dynamic database credential generation'
+  - 'manage AWS Secrets Manager secrets across dev, staging, and production'
+  - 'automate rotation of our third-party API keys without downtime'
+  - 'scan our git history for accidentally committed private keys and tokens'
+  - 'configure dotenv-vault or SOPS for encrypting secrets in version control'
+  - 'implement secret injection for Kubernetes pods using external secrets operator'
+  - 'audit where plain-text credentials might be leaking into application logs'
+  - 'design an emergency credential revocation and re-keying procedure'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'implement OAuth2 login and JWT validation'
+    expect: 'authentication'
+  - prompt: 'configure AWS IAM roles and least-privilege policies'
+    expect: 'cloud-security'
+  - prompt: 'audit npm packages for malicious dependencies'
+    expect: 'dependency-audit'

@@ -1,7 +1,16 @@
 should_fire:
-  - "help with deployment"
-  - "ship it"
-  - "run deployment workflow"
+  - 'deploy this Next.js app to Vercel with custom domain and preview branches'
+  - 'configure zero-downtime deployment for our backend on Railway or Fly.io'
+  - 'set up blue-green deployments on AWS ECS to prevent downtime'
+  - 'prepare a production release checklist and automated rollback plan'
+  - 'deploy a containerized web service to Google Cloud Run'
+  - 'manage environment variable sync and secrets across deployment stages'
+  - 'automate canary deployments with traffic shifting and health checks'
+  - 'troubleshoot a failed production deployment and roll back cleanly'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'write GitHub Actions scripts to build Docker images'
+    expect: 'ci-pipelines'
+  - prompt: 'investigate a production crash during an active outage'
+    expect: 'incident-response'
+  - prompt: 'write Terraform to provision the underlying server instances'
+    expect: 'infrastructure'

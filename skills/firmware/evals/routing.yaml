@@ -1,7 +1,16 @@
 should_fire:
-  - "help with firmware"
-  - "write bare-metal and rtos firmware for esp32, arm cortex-m, stm32 and nordic nrf."
-  - "run firmware workflow"
+  - 'write an interrupt service routine (ISR) for an STM32 microcontroller'
+  - 'implement I2C sensor communication in embedded C without blocking'
+  - 'configure FreeRTOS task priorities and queue communication for an ESP32'
+  - 'optimize RAM and flash memory usage on an ARM Cortex-M device'
+  - 'write a circular buffer implementation for UART serial data reception'
+  - 'handle low-power sleep modes and wake-up timers in battery IoT firmware'
+  - 'debug SPI timing issues with a hardware logic analyzer trace'
+  - 'implement a bootloader with firmware update verification checksums'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'build backend API web services in Go or Python'
+    expect: 'backend-build'
+  - prompt: 'write backend web services in Go or Python'
+    expect: 'backend-build'
+  - prompt: 'develop mobile native apps in Swift or Kotlin'
+    expect: 'mobile-build'

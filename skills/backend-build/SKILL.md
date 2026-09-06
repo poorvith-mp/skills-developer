@@ -1,7 +1,9 @@
 ---
 name: backend-build
+group: Build
 description: >-
-  Implement services and business logic: request handling, validation, transaction boundaries, caching, queues and background workers.
+  Implement services and business logic: request handling, validation, transactions, caching,
+  queues and workers. Use when implementing backend services or APIs.
 ---
 # Backend Build
 

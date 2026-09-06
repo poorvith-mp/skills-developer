@@ -1,7 +1,9 @@
 ---
 name: git-operations
+group: Repo hygiene
 description: >-
-  Do the actual git work: branch, stage, commit, rebase, resolve conflicts, and recover with reflog and reset.
+  Do the actual git work: branch, stage, commit, rebase, resolve conflicts, and recover with
+  reflog and reset. Use when resolving merge conflicts, complex rebases, or git history repairs.
 ---
 # Git Operations
 

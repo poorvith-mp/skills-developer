@@ -1,7 +1,16 @@
 should_fire:
-  - "help with cloud security"
-  - "design identity boundaries, network segmentation, key management and workload isolation."
-  - "run cloud-security workflow"
+  - 'audit our AWS IAM policies for overly permissive wildcard permissions'
+  - 'configure secure VPC networking with private subnets and NAT gateways'
+  - 'harden our S3 buckets against public access and enforce encryption'
+  - 'set up CloudTrail and AWS Config for continuous compliance monitoring'
+  - 'audit our Google Cloud IAM roles according to the principle of least privilege'
+  - 'configure security groups and network ACLs for our database instances'
+  - 'remediate security findings from AWS Security Hub or GuardDuty'
+  - 'harden our Kubernetes cluster RBAC and pod security standards'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'reduce our monthly AWS infrastructure bill'
+    expect: 'cloud-cost'
+  - prompt: 'write Terraform manifests for our cloud infrastructure'
+    expect: 'infrastructure'
+  - prompt: 'audit application code for injection flaws'
+    expect: 'security-review'

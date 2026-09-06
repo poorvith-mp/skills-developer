@@ -1,7 +1,9 @@
 ---
 name: database
+group: Understand and design
 description: >-
-  Design schemas with the right relationships, indexes and normalisation, then fix the queries that turn out slow.
+  Design schemas with the right relationships, indexes and normalisation, then fix the queries
+  that turn out slow. Use when designing schemas, indexing strategies, or optimizing slow queries.
 ---
 # Database
 

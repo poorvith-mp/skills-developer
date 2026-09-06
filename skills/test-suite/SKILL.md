@@ -1,7 +1,9 @@
 ---
 name: test-suite
+group: Quality
 description: >-
   Write tests for happy paths, edge cases and failure modes, and produce the run output as proof.
+  Use when writing unit, integration, or regression test suites.
 ---
 # Test Suite
 

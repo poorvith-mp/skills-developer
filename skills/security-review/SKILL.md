@@ -1,7 +1,9 @@
 ---
 name: security-review
+group: Security
 description: >-
-  Threat model with STRIDE and audit code against the OWASP Top 10 before it ships.
+  Threat model with STRIDE and audit code against the OWASP Top 10 before it ships. Use when
+  reviewing application code and endpoints for vulnerabilities.
 ---
 # Security Review
 

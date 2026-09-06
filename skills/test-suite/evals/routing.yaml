@@ -1,7 +1,16 @@
 should_fire:
-  - "help with test suite"
-  - "write tests for happy paths, edge cases and failure modes, and produce the run output as proof."
-  - "run test-suite workflow"
+  - 'write comprehensive unit tests for this authentication service'
+  - 'create an integration test suite using Vitest and Supertest'
+  - 'add regression tests for this bug so it never happens again'
+  - 'set up end-to-end tests using Playwright for our checkout flow'
+  - 'mock external API dependencies in Jest for fast test execution'
+  - 'increase test coverage on our payment processing module to 90%'
+  - 'write parameterized test cases covering boundary values in pytest'
+  - 'create snapshot tests and component tests for this React component'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'review this PR for missing test cases and regression risks'
+    expect: 'code-review'
+  - prompt: 'hack together a quick throwaway script with mock dummy data'
+    expect: 'prototype'
+  - prompt: 'run load tests against our staging server under concurrency'
+    expect: 'load-testing'

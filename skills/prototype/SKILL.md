@@ -1,7 +1,9 @@
 ---
 name: prototype
+group: Build
 description: >-
-  Build something working fast, choosing throwaway shortcuts deliberately and marking what must be rebuilt.
+  Build something working fast, choosing throwaway shortcuts deliberately and marking what must be
+  rebuilt. Use when rapidly building proof-of-concept prototypes or MVPs.
 ---
 # Prototype
 

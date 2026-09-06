@@ -1,7 +1,9 @@
 ---
 name: regex
+group: Domain-specific
 description: >-
-  Build and explain regular expressions with a breakdown of what each part matches and misses.
+  Build and explain regular expressions with a breakdown of what each part matches and misses. Use
+  when creating, debugging, or optimizing regular expressions.
 ---
 # Regex
 

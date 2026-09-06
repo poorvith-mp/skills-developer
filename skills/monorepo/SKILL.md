@@ -1,7 +1,9 @@
 ---
 name: monorepo
+group: Migrate and modernise
 description: >-
-  Structure a monorepo with build caching, affected-module detection and workspace boundaries.
+  Structure a monorepo with build caching, affected-module detection and workspace boundaries. Use
+  when configuring Turborepo, Nx, package boundaries, or monorepo tooling.
 ---
 # Monorepo
 

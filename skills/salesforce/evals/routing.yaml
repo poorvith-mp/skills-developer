@@ -1,7 +1,16 @@
 should_fire:
-  - "help with salesforce"
-  - "architect salesforce"
-  - "run salesforce workflow"
+  - 'write an Apex trigger to handle bulk lead routing with proper governor limits'
+  - 'build a Lightning Web Component (LWC) for account contact search'
+  - 'write test classes in Apex to achieve required 75%+ code coverage'
+  - 'implement a REST callout from Salesforce Apex to an external service'
+  - 'design complex Record-Triggered Flows to replace legacy workflow rules'
+  - 'optimize SOQL queries to avoid 101 query governor limit exceptions'
+  - 'configure custom metadata types and permission sets in Salesforce'
+  - 'build an asynchronous batch Apex class to process 50,000 records nightly'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'manage sales pipeline stages and CRM deal progression'
+    expect: 'pipeline-health'
+  - prompt: 'build customer-facing backend APIs in Node.js'
+    expect: 'backend-build'
+  - prompt: 'build automated workflows with n8n'
+    expect: 'n8n'

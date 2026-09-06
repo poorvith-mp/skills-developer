@@ -1,7 +1,9 @@
 ---
 name: stack-choice
+group: Understand and design
 description: >-
-  Evaluate technology options against requirements, team skill, scale and total cost, and record why.
+  Evaluate technology options against requirements, team skill, scale and total cost, and record
+  why. Use when evaluating technologies, frameworks, or database trade-offs.
 ---
 # Stack Choice
 

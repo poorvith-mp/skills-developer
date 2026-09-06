@@ -1,7 +1,16 @@
 should_fire:
-  - "help with commerce platform"
-  - "architect cms commerce"
-  - "run commerce-platform workflow"
+  - 'build a custom Shopify app with Shopify CLI and Remix'
+  - 'develop a custom Liquid section for a Shopify theme with schema settings'
+  - 'integrate Shopify Storefront API with a headless Next.js e-commerce frontend'
+  - 'handle Shopify webhook verification for order creation and inventory updates'
+  - 'customize Shopify checkout using Checkout UI Extensions'
+  - 'implement product filtering and search with Shopify GraphQL Admin API'
+  - 'sync catalog inventory between an ERP system and Shopify store'
+  - 'build a recurring subscription flow using Shopify Billing API'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'write standard frontend UI components in React'
+    expect: 'frontend-build'
+  - prompt: 'implement payment gateway processing logic with Stripe'
+    expect: 'backend-build'
+  - prompt: 'audit website checkout drop-offs and form abandonment'
+    expect: 'conversion-audit'

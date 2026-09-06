@@ -1,7 +1,9 @@
 ---
 name: implementation-plan
+group: Plan
 description: >-
-  Break the change into ordered, reviewable steps with checkpoints, so a long task can be stopped and resumed.
+  Break the change into ordered, reviewable steps with checkpoints, so a long task can be stopped
+  and resumed. Use when breaking changes into ordered, testable steps with checkpoints.
 ---
 # Implementation Plan
 

@@ -1,7 +1,9 @@
 ---
 name: cloud-cost
+group: Ship and run
 description: >-
-  Cut cloud spend with unit economics, rightsizing, showback and commitment planning.
+  Cut cloud spend with unit economics, rightsizing, showback and commitment planning. Use when
+  optimizing AWS/GCP bills, right-sizing, or FinOps practices.
 ---
 # Cloud Cost
 

@@ -1,7 +1,16 @@
 should_fire:
-  - "help with error handling"
-  - "design boundaries, fallbacks, retries, circuit breakers and graceful degradation paths."
-  - "run error-handling workflow"
+  - 'design a consistent error hierarchy and custom exception classes in Python'
+  - 'implement React Error Boundaries to catch UI crashes gracefully'
+  - 'standardize API error response shapes with error codes and helpful details'
+  - 'handle unexpected promise rejections and uncaught exceptions in Node.js'
+  - 'implement exponential backoff and jitter for transient network failures'
+  - 'ensure sensitive credentials are never leaked in error messages or logs'
+  - 'handle partial failures gracefully in distributed batch processing'
+  - 'design fallback behaviors when third-party microservices are down'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'diagnose why a specific function is currently crashing'
+    expect: 'debugging'
+  - prompt: 'write unit tests to verify error conditions'
+    expect: 'test-suite'
+  - prompt: 'triage an active P0 incident where users get 500 errors'
+    expect: 'incident-response'

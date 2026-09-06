@@ -1,7 +1,16 @@
 should_fire:
-  - "help with code review"
-  - "review a change for correctness, performance, security, readability, coverage and architectural fit."
-  - "run code-review workflow"
+  - 'review this pull request for bugs, security risks, and style'
+  - 'is this change safe to merge into our main branch'
+  - 'give me a second pair of eyes on this git diff'
+  - 'check this function for architectural fit and error handling'
+  - 'what would you flag in this pull request before I approve it'
+  - 'review the authentication changes in this branch for security holes'
+  - 'check this pull request for performance regressions and dead code'
+  - 'look over my implementation before I ship it to production'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'write comprehensive unit tests for this function'
+    expect: 'test-suite'
+  - prompt: 'why is this function throwing an unhandled exception'
+    expect: 'debugging'
+  - prompt: 'threat model our payment processing service'
+    expect: 'security-review'

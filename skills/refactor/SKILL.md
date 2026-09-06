@@ -1,7 +1,9 @@
 ---
 name: refactor
+group: Build
 description: >-
-  Find structural smells and apply named refactorings without changing behaviour.
+  Find structural smells and apply named refactorings without changing behaviour. Use when
+  restructuring code to improve cleanliness without changing behaviour.
 ---
 # Refactor
 

@@ -1,7 +1,9 @@
 ---
 name: dependency-audit
+group: Security
 description: >-
-  Check dependencies for CVEs, license conflicts and breaking-change risk before upgrading.
+  Check dependencies for CVEs, license conflicts and breaking-change risk before upgrading. Use
+  when scanning dependencies for CVEs, license conflicts, or supply-chain risks.
 ---
 # Dependency Audit
 

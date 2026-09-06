@@ -1,7 +1,16 @@
 should_fire:
-  - "help with backend build"
-  - "implement services and business logic"
-  - "run backend-build workflow"
+  - 'implement the webhook ingestion service in Node.js with idempotency'
+  - 'write a background job processor using BullMQ and Redis'
+  - 'implement user authentication middleware in Go'
+  - 'build the order checkout transaction logic in Python'
+  - 'implement rate limiting per tenant in our API gateway'
+  - 'write a service layer that coordinates payment and email notifications'
+  - 'implement file chunk upload and S3 multipart assembly'
+  - 'build a queue worker with exponential backoff retry handling'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'design the high-level service boundaries and domain model'
+    expect: 'system-design'
+  - prompt: 'write unit tests for this controller'
+    expect: 'test-suite'
+  - prompt: 'optimize a slow SQL join query'
+    expect: 'database'

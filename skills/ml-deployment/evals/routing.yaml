@@ -1,7 +1,16 @@
 should_fire:
-  - "help with ml deployment"
-  - "train, serve, evaluate and integrate models into production systems."
-  - "run ml-deployment workflow"
+  - 'deploy this PyTorch model to Triton inference server with GPU batching'
+  - 'serve a scikit-learn classifier with FastAPI and Docker'
+  - 'set up model monitoring for prediction drift and inference latency'
+  - 'optimize model inference using ONNX Runtime quantization'
+  - 'configure an autoscaling endpoint for model inference on AWS SageMaker'
+  - 'package our embeddings model into a low-latency gRPC service'
+  - 'implement A/B testing between two model versions in production'
+  - 'handle batch inference jobs for daily customer scoring'
 should_not_fire:
-  - prompt: "unrelated query outside this domain"
-    expect: general-inquiry
+  - prompt: 'audit an ML model for bias, fairness, and documentation'
+    expect: 'model-audit'
+  - prompt: 'build regression test sets for evaluating LLM prompts'
+    expect: 'llm-evals'
+  - prompt: 'build the ETL pipeline to prepare training datasets'
+    expect: 'data-pipelines'

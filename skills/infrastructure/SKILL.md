@@ -1,7 +1,9 @@
 ---
 name: infrastructure
+group: Ship and run
 description: >-
   Write Terraform, Pulumi or CloudFormation and automate provisioning, state and drift detection.
+  Use when writing Terraform, OpenTofu, Pulumi, or cloud IaC manifests.
 ---
 # Infrastructure
 

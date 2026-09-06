@@ -1,7 +1,9 @@
 ---
 name: port-code
+group: Build
 description: >-
-  Translate code between languages, or migrate JavaScript to TypeScript, preserving behaviour and coverage.
+  Translate code between languages, or migrate JavaScript to TypeScript, preserving behaviour and
+  coverage. Use when translating code across languages or migrating to TypeScript.
 ---
 # Port Code
 

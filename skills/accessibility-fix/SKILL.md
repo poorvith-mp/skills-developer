@@ -1,7 +1,9 @@
 ---
 name: accessibility-fix
+group: Domain-specific
 description: >-
   Audit and refactor code for WCAG 2.1/2.2 AA and AAA: ARIA, keyboard operability, screen readers.
+  Use when auditing or remediating WCAG 2.1/2.2 AA/AAA accessibility issues.
 ---
 # Accessibility Fix
 
