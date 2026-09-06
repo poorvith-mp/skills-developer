@@ -5,7 +5,7 @@ description: >-
 ---
 # Developer Platform
 
-Designs and maintains internal developer platforms that provide golden paths, self-service infrastructure, and streamlined developer experiences.
+Designs and maintains internal developer platforms that provide golden paths, self-service infrastructure, and smooth developer workflows.
 
 ## Phased Workflow
 

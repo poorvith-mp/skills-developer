@@ -16,7 +16,7 @@ Designs, implements, and secures e-commerce workflows, shopping carts, checkout 
 ### Phase 2: Checkout & Payment Integration
 1. Implement PCI-DSS compliant payment integration (Stripe Elements, PayPal SDK, Apple/Google Pay).
 2. Ensure idempotent webhook handling for asynchronous order state transitions (`charge.succeeded`, `payment_intent.failed`).
-3. Optimize checkout UX: reduce friction, enable 1-click checkout, streamline shipping calculation.
+3. Optimize checkout UX: reduce friction, enable 1-click checkout, simplify shipping calculation.
 
 ### Phase 3: Performance, Security & Caching
 1. Configure selective caching (exclude cart, checkout, account pages from Varnish/CDN cache).

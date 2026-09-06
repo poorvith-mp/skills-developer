@@ -5,7 +5,7 @@ description: >-
 ---
 # Threat Detection
 
-Develops automated threat detection logic, analyzes security telemetry, correlates SOC events, and leverages threat intelligence to proactively defend infrastructure.
+Develops automated threat detection logic, analyzes security telemetry, correlates SOC events, and applies threat intelligence to defend infrastructure.
 
 ## Phased Workflow
 
