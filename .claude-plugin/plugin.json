@@ -1,7 +1,7 @@
 {
   "name": "skills-developer",
   "displayName": "Developer Skills",
-  "version": "4.0.0",
+  "version": "3.0.0",
   "description": "58 developer skills. Software engineering: architecture, security, CI/CD, data, mobile, SRE and debugging.",
   "author": {
     "name": "Poorvith M P",
