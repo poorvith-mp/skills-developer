@@ -1,5 +1,6 @@
 ---
 name: speech-pipelines
+last_reviewed: 2026-09-06
 group: Data and AI
 description: >-
   Build voice pipelines from audio ingestion through Whisper-style or cloud ASR to structured

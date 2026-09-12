@@ -1,5 +1,6 @@
 ---
 name: test-writer
+last_reviewed: 2026-09-06
 description: Moved to test-suite in skills-developer. Removed in v4.1.
 deprecated: true
 ---

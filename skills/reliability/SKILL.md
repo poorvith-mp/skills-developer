@@ -1,5 +1,6 @@
 ---
 name: reliability
+last_reviewed: 2026-09-06
 group: Ship and run
 description: >-
   Set SLOs and error budgets, instrument with OpenTelemetry, and build the dashboards that prove

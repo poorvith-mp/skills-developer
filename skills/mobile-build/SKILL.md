@@ -1,5 +1,6 @@
 ---
 name: mobile-build
+last_reviewed: 2026-09-06
 group: Build
 description: >-
   Build mobile apps native or cross-platform, with real depth in Swift/SwiftUI and Kotlin/Compose.

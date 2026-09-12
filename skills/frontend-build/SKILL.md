@@ -1,5 +1,6 @@
 ---
 name: frontend-build
+last_reviewed: 2026-09-06
 group: Build
 description: >-
   Implement web UIs in React, Vue or Angular with attention to performance, state and correctness.

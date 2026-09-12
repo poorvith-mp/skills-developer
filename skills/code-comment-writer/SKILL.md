@@ -1,5 +1,6 @@
 ---
 name: code-comment-writer
+last_reviewed: 2026-09-06
 description: Moved to repo-docs in skills-developer. Removed in v4.1.
 deprecated: true
 ---

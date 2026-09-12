@@ -1,5 +1,6 @@
 ---
 name: cloud-cost
+last_reviewed: 2026-09-06
 group: Ship and run
 description: >-
   Cut cloud spend with unit economics, rightsizing, showback and commitment planning. Use when

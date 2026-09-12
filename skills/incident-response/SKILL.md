@@ -1,5 +1,6 @@
 ---
 name: incident-response
+last_reviewed: 2026-09-06
 group: Ship and run
 description: >-
   Run a live incident: severity call, triage, stakeholder comms, mitigation and the writeup. Use

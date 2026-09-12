@@ -1,5 +1,6 @@
 ---
 name: monorepo
+last_reviewed: 2026-09-06
 group: Migrate and modernise
 description: >-
   Structure a monorepo with build caching, affected-module detection and workspace boundaries. Use

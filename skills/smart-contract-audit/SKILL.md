@@ -1,5 +1,6 @@
 ---
 name: smart-contract-audit
+last_reviewed: 2026-09-06
 group: Domain-specific
 description: >-
   Audit contracts for reentrancy, access control flaws and oracle manipulation. Use when auditing

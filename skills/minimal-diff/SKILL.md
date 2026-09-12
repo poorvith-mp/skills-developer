@@ -1,5 +1,6 @@
 ---
 name: minimal-diff
+last_reviewed: 2026-09-06
 group: Build
 description: >-
   Make the smallest correct change that fixes the problem, resisting every incidental refactor.

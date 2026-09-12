@@ -1,5 +1,6 @@
 ---
 name: database
+last_reviewed: 2026-09-06
 group: Understand and design
 description: >-
   Design schemas with the right relationships, indexes and normalisation, then fix the queries

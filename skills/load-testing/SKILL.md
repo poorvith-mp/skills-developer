@@ -1,5 +1,6 @@
 ---
 name: load-testing
+last_reviewed: 2026-09-06
 group: Quality
 description: >-
   Design and run load tests with realistic traffic patterns against a stated baseline. Use when

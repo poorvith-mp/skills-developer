@@ -1,5 +1,6 @@
 ---
 name: developer-platform
+last_reviewed: 2026-09-06
 group: Ship and run
 description: >-
   Build golden paths and self-service provisioning so teams stop rebuilding the same scaffolding.

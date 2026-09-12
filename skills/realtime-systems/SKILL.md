@@ -1,5 +1,6 @@
 ---
 name: realtime-systems
+last_reviewed: 2026-09-06
 group: Build
 description: >-
   Build WebSocket, SSE and pub/sub features: presence, fan-out, reconnection and backpressure. Use

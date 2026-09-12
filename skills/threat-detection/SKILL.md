@@ -1,5 +1,6 @@
 ---
 name: threat-detection
+last_reviewed: 2026-09-06
 group: Security
 description: >-
   Write detection rules, correlate SIEM telemetry and map behaviour to MITRE ATT&CK. Use when

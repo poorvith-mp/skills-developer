@@ -1,5 +1,6 @@
 ---
 name: pen-test
+last_reviewed: 2026-09-06
 group: Security
 description: >-
   Run authorised penetration tests and red team exercises against apps, networks and cloud. Use

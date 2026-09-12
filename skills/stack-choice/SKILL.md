@@ -1,5 +1,6 @@
 ---
 name: stack-choice
+last_reviewed: 2026-09-06
 group: Understand and design
 description: >-
   Evaluate technology options against requirements, team skill, scale and total cost, and record

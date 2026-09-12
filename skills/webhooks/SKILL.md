@@ -1,5 +1,6 @@
 ---
 name: webhooks
+last_reviewed: 2026-09-06
 group: Domain-specific
 description: >-
   Build webhook receivers with signature verification, idempotency, retries and dead letter

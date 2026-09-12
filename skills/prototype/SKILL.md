@@ -1,5 +1,6 @@
 ---
 name: prototype
+last_reviewed: 2026-09-06
 group: Build
 description: >-
   Build something working fast, choosing throwaway shortcuts deliberately and marking what must be

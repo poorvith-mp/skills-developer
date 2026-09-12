@@ -1,5 +1,6 @@
 ---
 name: debugging
+last_reviewed: 2026-09-06
 group: Quality
 description: >-
   Turn a trace into a plain explanation, then isolate the cause by binary search and hypothesis

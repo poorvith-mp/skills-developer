@@ -1,5 +1,6 @@
 ---
 name: model-audit
+last_reviewed: 2026-09-06
 group: Data and AI
 description: Independently review a model end to end: data reconstruction, replication and challenge. For legal compliance, see ai-governance. Use when auditing ML models, bias, or data integrity.
 ---

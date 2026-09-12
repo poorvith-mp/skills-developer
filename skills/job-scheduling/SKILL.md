@@ -1,5 +1,6 @@
 ---
 name: job-scheduling
+last_reviewed: 2026-09-06
 group: Ship and run
 description: >-
   Design scheduled jobs with timezone handling, overlap prevention, alerting and dependency order.

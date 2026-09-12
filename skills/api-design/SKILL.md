@@ -1,5 +1,6 @@
 ---
 name: api-design
+last_reviewed: 2026-09-06
 group: Understand and design
 description: >-
   Design and document REST, GraphQL and gRPC contracts with OpenAPI, versioning and contract

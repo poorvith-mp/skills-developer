@@ -1,5 +1,6 @@
 ---
 name: ci-cd-pipeline-builder
+last_reviewed: 2026-09-06
 description: Moved to ci-pipelines in skills-developer. Removed in v4.1.
 deprecated: true
 ---

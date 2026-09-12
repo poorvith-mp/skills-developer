@@ -1,5 +1,6 @@
 ---
 name: data-pipelines
+last_reviewed: 2026-09-06
 group: Data and AI
 description: >-
   Build ETL/ELT and streaming pipelines with quality validation, schema evolution and anomaly

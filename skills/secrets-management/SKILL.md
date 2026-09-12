@@ -1,5 +1,6 @@
 ---
 name: secrets-management
+last_reviewed: 2026-09-06
 group: Security
 description: >-
   Handle keys properly: vaults, rotation, `.env` hygiene, pre-commit scanning, and purging a key

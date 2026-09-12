@@ -1,5 +1,6 @@
 ---
 name: branching-strategy
+last_reviewed: 2026-09-06
 group: Repo hygiene
 description: >-
   Design the branching and release model: trunk-based or GitFlow, protection rules, review policy,

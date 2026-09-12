@@ -1,5 +1,6 @@
 ---
 name: security-review
+last_reviewed: 2026-09-06
 group: Security
 description: >-
   Threat model with STRIDE and audit code against the OWASP Top 10 before it ships. Use when

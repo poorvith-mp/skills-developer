@@ -1,5 +1,6 @@
 ---
 name: salesforce
+last_reviewed: 2026-09-06
 group: Domain-specific
 description: >-
   Architect Salesforce: multi-cloud design, integration patterns, governor limits and deployment.

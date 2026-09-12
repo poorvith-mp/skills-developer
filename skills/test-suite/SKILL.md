@@ -1,5 +1,6 @@
 ---
 name: test-suite
+last_reviewed: 2026-09-06
 group: Quality
 description: >-
   Write tests for happy paths, edge cases and failure modes, and produce the run output as proof.

@@ -1,5 +1,6 @@
 ---
 name: spec-writing
+last_reviewed: 2026-09-06
 group: Plan
 description: >-
   Turn a vague request into a written spec: scope, non-goals, acceptance criteria and the edge

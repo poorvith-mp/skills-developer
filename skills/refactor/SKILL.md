@@ -1,5 +1,6 @@
 ---
 name: refactor
+last_reviewed: 2026-09-06
 group: Build
 description: >-
   Find structural smells and apply named refactorings without changing behaviour. Use when

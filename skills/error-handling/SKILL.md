@@ -1,5 +1,6 @@
 ---
 name: error-handling
+last_reviewed: 2026-09-06
 group: Domain-specific
 description: >-
   Design boundaries, fallbacks, retries, circuit breakers and graceful degradation paths. Use when

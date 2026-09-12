@@ -1,5 +1,6 @@
 ---
 name: performance-audit
+last_reviewed: 2026-09-06
 group: Quality
 description: >-
   Profile and fix slowness across Core Web Vitals, backend queries and infrastructure. Use when

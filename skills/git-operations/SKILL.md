@@ -1,5 +1,6 @@
 ---
 name: git-operations
+last_reviewed: 2026-09-06
 group: Repo hygiene
 description: >-
   Do the actual git work: branch, stage, commit, rebase, resolve conflicts, and recover with

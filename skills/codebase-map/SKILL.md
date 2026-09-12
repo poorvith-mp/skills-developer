@@ -1,5 +1,6 @@
 ---
 name: codebase-map
+last_reviewed: 2026-09-06
 group: Understand and design
 description: >-
   Map an unfamiliar codebase: entry points, data flow, key abstractions and where the first change

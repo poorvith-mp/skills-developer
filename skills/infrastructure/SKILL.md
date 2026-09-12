@@ -1,5 +1,6 @@
 ---
 name: infrastructure
+last_reviewed: 2026-09-06
 group: Ship and run
 description: >-
   Write Terraform, Pulumi or CloudFormation and automate provisioning, state and drift detection.

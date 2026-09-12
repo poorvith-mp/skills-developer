@@ -1,5 +1,6 @@
 ---
 name: solution-exploration
+last_reviewed: 2026-09-06
 group: Plan
 description: >-
   Diverge before committing: generate genuinely different approaches, name trade-offs, and kill

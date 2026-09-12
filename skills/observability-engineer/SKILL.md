@@ -1,5 +1,6 @@
 ---
 name: observability-engineer
+last_reviewed: 2026-09-06
 description: Moved to reliability in skills-developer. Removed in v4.1.
 deprecated: true
 ---

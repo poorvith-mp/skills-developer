@@ -1,5 +1,6 @@
 ---
 name: smart-contracts
+last_reviewed: 2026-09-06
 group: Domain-specific
 description: >-
   Write Solidity for EVM: contract architecture, gas optimisation, upgradeable proxies and DeFi

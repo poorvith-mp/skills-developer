@@ -1,5 +1,6 @@
 ---
 name: git-workflow-architect
+last_reviewed: 2026-09-06
 description: Moved to branching-strategy in skills-developer. Removed in v4.1.
 deprecated: true
 ---

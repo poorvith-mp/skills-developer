@@ -1,5 +1,6 @@
 ---
 name: llm-evals
+last_reviewed: 2026-09-06
 group: Data and AI
 description: >-
   Build evaluation harnesses: regression sets, scoring rubrics, drift detection and benchmarks.

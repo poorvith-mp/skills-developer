@@ -1,5 +1,6 @@
 ---
 name: migration
+last_reviewed: 2026-09-06
 group: Migrate and modernise
 description: >-
   Map the debt, plan a strangler migration, and execute the zero-downtime cutover. Use when

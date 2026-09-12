@@ -1,5 +1,6 @@
 ---
 name: change-notes
+last_reviewed: 2026-09-06
 group: Repo hygiene
 description: >-
   Write commit messages, PR descriptions and changelog entries from the diff itself. Use when

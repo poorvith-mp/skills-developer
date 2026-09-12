@@ -1,5 +1,6 @@
 ---
 name: repo-docs
+last_reviewed: 2026-09-06
 group: Repo hygiene
 description: >-
   Write the README, setup guide and comments that explain intent rather than restate the code. Use

@@ -1,5 +1,6 @@
 ---
 name: implementation-plan
+last_reviewed: 2026-09-06
 group: Plan
 description: >-
   Break the change into ordered, reviewable steps with checkpoints, so a long task can be stopped

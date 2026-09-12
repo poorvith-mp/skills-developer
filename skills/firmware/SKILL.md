@@ -1,5 +1,6 @@
 ---
 name: firmware
+last_reviewed: 2026-09-06
 group: Domain-specific
 description: >-
   Write bare-metal and RTOS firmware for ESP32, ARM Cortex-M, STM32 and Nordic nRF. Use when

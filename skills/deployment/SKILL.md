@@ -1,5 +1,6 @@
 ---
 name: deployment
+last_reviewed: 2026-09-06
 group: Ship and run
 description: >-
   Ship it: platform config for Vercel, Netlify, Fly, Railway, AWS, env secrets, checklists, and

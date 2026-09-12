@@ -1,5 +1,6 @@
 ---
 name: ci-pipelines
+last_reviewed: 2026-09-06
 group: Ship and run
 description: >-
   Build CI/CD with build, test, security scan and deploy stages across common providers. Use when

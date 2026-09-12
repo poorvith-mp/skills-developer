@@ -1,5 +1,6 @@
 ---
 name: cloud-security
+last_reviewed: 2026-09-06
 group: Security
 description: >-
   Design identity boundaries, network segmentation, key management and workload isolation. Use

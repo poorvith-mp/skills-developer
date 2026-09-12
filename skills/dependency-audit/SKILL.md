@@ -1,5 +1,6 @@
 ---
 name: dependency-audit
+last_reviewed: 2026-09-06
 group: Security
 description: >-
   Check dependencies for CVEs, license conflicts and breaking-change risk before upgrading. Use

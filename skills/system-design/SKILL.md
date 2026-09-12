@@ -1,5 +1,6 @@
 ---
 name: system-design
+last_reviewed: 2026-09-06
 group: Understand and design
 description: >-
   Design the whole system: service boundaries, domain model, patterns, and the decision record

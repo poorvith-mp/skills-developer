@@ -1,5 +1,6 @@
 ---
 name: github-workflow
+last_reviewed: 2026-09-06
 group: Repo hygiene
 description: >-
   Open and land PRs, respond to review comments, manage issues, labels, tags and releases through

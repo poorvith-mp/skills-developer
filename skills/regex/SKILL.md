@@ -1,5 +1,6 @@
 ---
 name: regex
+last_reviewed: 2026-09-06
 group: Domain-specific
 description: >-
   Build and explain regular expressions with a breakdown of what each part matches and misses. Use

@@ -1,5 +1,6 @@
 ---
 name: audit-readiness
+last_reviewed: 2026-09-06
 group: Security
 description: >-
   Prepare for SOC 2, ISO 27001, HIPAA or PCI-DSS: control mapping, gap analysis and evidence. Use

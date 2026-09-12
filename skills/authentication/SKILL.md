@@ -1,5 +1,6 @@
 ---
 name: authentication
+last_reviewed: 2026-09-06
 group: Security
 description: >-
   Implement OAuth 2.0, OIDC, sessions, token lifetimes, MFA and password storage without rolling

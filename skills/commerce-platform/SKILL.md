@@ -1,5 +1,6 @@
 ---
 name: commerce-platform
+last_reviewed: 2026-09-06
 group: Domain-specific
 description: >-
   Architect CMS commerce: cart pipeline, checkout, payment gateways and PCI boundaries. Use when

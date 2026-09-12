@@ -1,5 +1,6 @@
 ---
 name: ml-deployment
+last_reviewed: 2026-09-06
 group: Data and AI
 description: >-
   Train, serve, evaluate and integrate models into production systems. Use when deploying,

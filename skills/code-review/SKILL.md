@@ -1,5 +1,6 @@
 ---
 name: code-review
+last_reviewed: 2026-09-06
 group: Quality
 description: >-
   Review a change for correctness, performance, security, readability, coverage and architectural
